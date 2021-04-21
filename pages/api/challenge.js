@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const axios = require('axios');
 const fs = require('fs').promises;
+const path = require('path');
 
 import { config, stravaEndpoints } from './config';
 import data from './data/runningChallenge2021.json';
@@ -59,7 +60,11 @@ async function saveNewWorkouts(activities){
   }
 
   data.items.unshift(...activitiesToSave);
-  await fs.writeFile('./pages/api/data/runningChallenge2021.json', JSON.stringify(data));
+
+  const filePath = path.join(process.cwd(), 'pages', 'api', 'data', 'runningChallenge2021.json');
+
+
+  await fs.writeFile(filePath, JSON.stringify(data));
 
   return data;
 }
