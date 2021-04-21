@@ -1,0 +1,73 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eed59a;
+}
+
+.table {
+  width: 70vh;
+  border: 1px solid #eed59a;
+  border-collapse: collapse;
+  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+}
+
+.table thead{
+  border: solid;
+  border-width: 1px 0;
+}
+
+.table th{
+  text-align: left;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.table td{
+  /* padding: 20px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  border: none;
+  font-size: x-large;
+}
+
+.table tr{
+  transition: background-color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.table tr:hover{
+  background-color:#eed59a;
+  cursor: pointer;
+  color: #363636;
+}
+
+.avatar {
+	line-height: 0;
+	display: inline-block;
+	margin: 5px;
+  border: 2px solid #eed59a;
+	border-radius: 50%;
+	transition: linear 0.25s;
+  height: 60px;
+  width: 60px;
+}
+
+.avatar:hover {
+	transition: ease-out 0.2s;
+  border: 2px solid #363636;
+  -webkit-transition: ease-out 0.2s;
+}
+
+.athlete {
+  display: flex;
+  align-items: center;
+}
+
+.regularPlace{
+  margin-left: 10px;
+}
