@@ -2,6 +2,7 @@
 const axios = require('axios');
 const fs = require('fs').promises;
 const path = require('path');
+const { tmpdir } = require('os');
 
 import { config, stravaEndpoints } from './config';
 import data from './data/runningChallenge2021.json';
@@ -61,10 +62,9 @@ async function saveNewWorkouts(activities){
 
   data.items.unshift(...activitiesToSave);
 
-  const filePath = path.join(process.cwd(), 'pages', 'api', 'data', 'runningChallenge2021.json');
+  const pathToFile = path.join(tmpdir(), 'runningChallenge2021.json');
 
-
-  await fs.writeFile(filePath, JSON.stringify(data));
+  await fs.writeFile(pathToFile, JSON.stringify(data));
 
   return data;
 }
