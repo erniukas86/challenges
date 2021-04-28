@@ -5,14 +5,14 @@ const path = require('path');
 const { tmpdir } = require('os');
 
 import { config, stravaEndpoints } from './config';
-import data from './data/runningChallenge2021.json';
 
 export default async (req, res) => {
     try {
       const token = await getAccessToken();
       
-      const workouts = await getClubWorkouts(token);
-      let result = await saveNewWorkouts(workouts);
+      const activities = await getClubActivities(token);
+      const savedActivities = await readSavedActivities();
+      let result = await saveNewActivities(activities, savedActivities);
       result = calculateTotals(result);
 
       res.status(200).json(result);
@@ -33,7 +33,7 @@ async function getAccessToken(){
   return response.data.access_token;
 }
 
-async function getClubWorkouts(token) {
+async function getClubActivities(token) {
   const response = await axios.get(stravaEndpoints.GET_CLUB_WORKOUTS,{
     headers: {
       'Authorization': `Bearer ${token}`
@@ -43,9 +43,9 @@ async function getClubWorkouts(token) {
   return response.data;
 }
 
-async function saveNewWorkouts(activities){
+async function saveNewActivities(activities, savedActivities){
   const activitiesToSave = [];
-  const startId = getStartId();
+  const startId = getStartId(savedActivities);
 
   for (let index = 0; index < activities.length; index++) {
     const activity = activities[index];
@@ -53,31 +53,55 @@ async function saveNewWorkouts(activities){
     if(getActivityId(activity) !== startId){
       activitiesToSave.push(activity);
     } else {
-      if(data.items && data.items.length === 0){
+      if(savedActivities.length === 0){
       activitiesToSave.push(activity);
     }
       break;
     }
   }
 
-  data.items.unshift(...activitiesToSave);
+  savedActivities.unshift(...activitiesToSave);
 
-  const pathToFile = path.join(tmpdir(), 'runningChallenge2021.json');
+  const result = {
+    items: savedActivities,
+    name: config.challengeName,
+    desciption: config.challengeDescription
+  };
 
-  await fs.writeFile(pathToFile, JSON.stringify(data));
+  await fs.writeFile(getPathToFile(), JSON.stringify(result));
 
-  return data;
+  return result;
+}
+
+function getPathToFile (){
+  return path.join(tmpdir(), `${config.challengeName}.json`);
+}
+
+async function readSavedActivities () {
+  try {
+    const fileContent = await fs.readFile(getPathToFile(), 'utf8');
+    console.log('getPathToFile', getPathToFile());
+    const result = JSON.parse(fileContent);
+
+    if(result && result.items){
+      return result.items;
+    }
+
+    return [];
+  } catch (error) {
+    return [];
+  }
 }
 
 function getActivityId(activity){
   return `${activity.distance}${activity.moving_time}${activity.elapsed_time}${activity.total_elevation_gain}`;
 }
 
-function getStartId () {
-  let startId = data.startId;
+function getStartId (savedActivities) {
+  let startId = config.challengeStartId;
 
-  if(data.items && data.items.length > 0){
-    startId = getActivityId(data.items[0]);
+  if(savedActivities.length > 0){
+    startId = getActivityId(savedActivities[0]);
   }
 
   return startId;
