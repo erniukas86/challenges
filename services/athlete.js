@@ -54,6 +54,14 @@ const athleteMap = {
     'andrejusi.': {
         name: 'Andrejus Ivaščenko',
         avatar: '94e4a794-6a5d-4722-8992-750256945b6a.png'
+    },
+    'klaidasp.': {
+        name: 'Klaidas Pilkis',
+        avatar: '980385af-64fa-4868-bfb8-bef3c74d1720.png'
+    },
+    'liudasj.': {
+        name: 'Liudas Jonušas',
+        avatar: '8acbeb25-ffee-4722-b718-a49b87a141c8.jpg'
     }
 };
 
