@@ -46,6 +46,7 @@ export async function getStaticProps() {
     props: {
       challenge: challenge,
     },
+    revalidate: 1
   }
 }
 
