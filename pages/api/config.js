@@ -5,7 +5,7 @@ export const config = {
     stravaApiUrl: 'https://www.strava.com/api/v3',
     challengeName: 'PC RUNNING CHALLENGE 2021',
     challengeDescription: '',
-    challengeStartId: '4170.71201132743.7'
+    challengeStartId: '15213.25544558792.8'
 };
 
 export const stravaEndpoints = {
