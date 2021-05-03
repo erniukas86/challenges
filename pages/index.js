@@ -3,9 +3,31 @@ import { getChallenge } from '../services/challenge';
 import { getAthleteName, getAthleteAvatar } from '../services/athlete';
 
 function Home({ challenge }) {
+  let teamTotalKm = 0;
+
+  challenge.items.forEach((element) => {
+    teamTotalKm += element.total;
+  });
+
+  teamTotalKm /= 1000;
+
+  const progressText = `${teamTotalKm.toFixed(2)}/${challenge.teamRecord}km (PC record)`;
+  const progressInPercent = (teamTotalKm * 100) / challenge.teamRecord;
+  const clipPath = `inset(0 0 0 ${progressInPercent}%)`;
+
   return (
     <div className={styles.container}>
-      <h1>{challenge.name}</h1>
+      <h2>{challenge.name}</h2>
+      <h4>{challenge.description}</h4>
+      <div className={styles.teamRecordContainer}>
+        <div className={styles.teamRecordBackText}>{progressText}</div>
+        <div
+          className={styles.teamRecordFrontText}
+          style={{ clipPath, WebkitClipPath: clipPath }}
+        >
+          {progressText}
+        </div>
+      </div>
       <table className={styles.table}>
         <thead>
           <th>Rank</th>

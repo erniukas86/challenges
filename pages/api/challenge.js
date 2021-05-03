@@ -67,7 +67,8 @@ async function saveNewActivities(activities, savedActivities) {
   const result = {
     items: savedActivities,
     name: config.challengeName,
-    desciption: config.challengeDescription,
+    description: config.challengeDescription,
+    teamRecord: config.challengeTeamRecord,
   };
 
   await fs.writeFile(getPathToFile(), JSON.stringify(result));
