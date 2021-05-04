@@ -1,4 +1,4 @@
-const athleteMap = {
+export const athleteMap = {
   'dariuso.': {
     name: 'Darius Orvidas',
     avatar: '4ce9e897-9d5a-4e33-b0f3-832143552b02.jpg',
@@ -62,6 +62,10 @@ const athleteMap = {
   'liudasj.': {
     name: 'Liudas Jonušas',
     avatar: '8acbeb25-ffee-4722-b718-a49b87a141c8.jpg',
+  },
+  'sandraž.': {
+    name: 'Sandra Žemaitaitytė',
+    avatar: 'f2914e1c-e7fe-494b-9cb6-6d3803bb8c67.jpg',
   },
 };
 
