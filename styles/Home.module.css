@@ -9,7 +9,7 @@
 }
 
 .table {
-  width: 70%;
+  width: 700px;
   border: 1px solid #eed59a;
   border-collapse: collapse;
   box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
@@ -73,7 +73,7 @@
 }
 
 .teamRecordContainer{
-  width: 60%;
+  width: 600px;
   height: 30px;
   border: 1px solid;
   margin-bottom: 10px;
@@ -103,4 +103,22 @@
   background: #363636;
   color: #eed59a;
   transition: clip-path 1s linear;
+}
+
+@media screen and (max-width: 700px) {
+  .table {
+    width: 100%;
+  }
+  
+  .teamRecordContainer{
+    width: 95%;
+  }
+
+  .teamRecordBackText{
+    font-size: small;
+  }
+
+  .teamRecordFrontText{
+    font-size: small;
+  }
 }
