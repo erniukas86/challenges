@@ -1,11 +1,13 @@
 import styles from '../styles/Home.module.css';
 import { getChallenge } from '../services/challenge';
-import { getAthleteName, getAthleteAvatar } from '../services/athlete';
+import { getAthleteName, getAthleteAvatar, athleteMap } from '../services/athlete';
 
 function Home({ challenge }) {
   let teamTotalKm = 0;
 
-  challenge.items.forEach((element) => {
+  const activities = challenge.items.filter((x) => athleteMap[x.name.toLowerCase()]);
+
+  activities.forEach((element) => {
     teamTotalKm += element.total;
   });
 
@@ -34,7 +36,7 @@ function Home({ challenge }) {
           <th>Athlete</th>
           <th>Distance</th>
         </thead>
-        {challenge.items.map((item, index) => (
+        {activities.map((item, index) => (
           <tr key={item.name}>
             <td>
               {index === 0 && '🥇'}
