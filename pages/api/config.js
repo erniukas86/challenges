@@ -11,5 +11,5 @@ export const config = {
 
 export const stravaEndpoints = {
   GET_ACCESS_TOKEN: `${config.stravaApiUrl}/oauth/token`,
-  GET_CLUB_WORKOUTS: `${config.stravaApiUrl}/clubs/772847/activities`,
+  GET_CLUB_WORKOUTS: `${config.stravaApiUrl}/clubs/772847/activities?per_page=200?page=0`,
 };
