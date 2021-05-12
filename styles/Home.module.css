@@ -105,6 +105,63 @@
   transition: clip-path 1s linear;
 }
 
+.goalButton{
+  height: 30px;
+  background-color: #eed59a;
+  border: none;
+  color: #363636;
+  font-weight: bolder;
+  margin-left: 10px;
+  position: relative;
+  top: -2px;
+  transition: background-color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.goalButton:hover{
+  background-color: #363636;
+  color: #eed59a;
+  cursor: pointer;
+}
+
+.dialogHeader{
+  color: #eed59a
+}
+
+.dialogContent{
+  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.dialogFooter{
+  height: 50px;
+}
+
+.select {
+  height: 30px;
+  min-width: 50%;
+  background-color: #363636;
+  border: 1px solid #eed59a;
+  color: #eed59a;
+}
+
+.input {
+  height: 30px;
+    min-width: 50%;
+    margin-top: 10px;
+    background-color: #363636;
+    border: 1px solid #eed59a;
+    color: #eed59a;
+    padding-left: 5px;
+}
+
+.kmPerdayText {
+  font-size: x-small;
+  position: relative;
+  top: 14px;
+}
+
 @media screen and (max-width: 700px) {
   .table {
     width: 100%;
