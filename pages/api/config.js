@@ -4,7 +4,7 @@ export const config = {
   refreshToken: '0c3867795fc7196384bd4f85c472860fff40b985',
   stravaApiUrl: 'https://www.strava.com/api/v3',
   challengeName: 'PC RUNNING CHALLENGE 2021',
-  challengeStartId: '15213.25544558792.8',
+  challengeStartId: '10017.32815281520',
   challengeTeamRecord: 4637,
   challengeDescription: 'Rewards: >75Km: individual medals. Top 3: Special prizes and infinite glory.',
 };

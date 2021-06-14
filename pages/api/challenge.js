@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { config, stravaEndpoints } from './config';
 
@@ -117,6 +118,47 @@ function calculateTotals(challenge) {
   return result;
 }
 
+function applyModifier(result) {
+  const modifiers = {
+    'dariuso.': 49008,
+    'simasb.': 36400,
+    'henrikasm.': 14190,
+    'simasv.': 61110,
+    'petern.': 34290,
+    'erniukasb.': 518700,
+    'edgarasa.': 251800,
+    'rokass.': 62000,
+    'pauliusv.': 228830,
+    'martynasj.': 210400,
+    'audriusl.': 32960,
+    'klaidasp.': 226640,
+    'liudasj.': 78490,
+    'sandraž.': 13000,
+  };
+
+  const keys = Object.keys(modifiers);
+
+  const items = [];
+
+  for (let index = 0; index < keys.length; index++) {
+    const key = keys[index];
+    const res = result.items.find((x) => x.name.toLowerCase() === key);
+    let total = modifiers[key];
+
+    if (res) {
+      total += res.total;
+    }
+
+    items.push({ name: key, total });
+  }
+
+  result.items = items;
+
+  result.items.sort((a, b) => (a.total < b.total ? 1 : -1));
+
+  return result;
+}
+
 export default async (req, res) => {
   try {
     const token = await getAccessToken();
@@ -126,7 +168,7 @@ export default async (req, res) => {
     let result = await saveNewActivities(activities, savedActivities);
     result = calculateTotals(result);
 
-    res.status(200).json(result);
+    res.status(200).json(applyModifier(result));
   } catch (error) {
     console.log(error);
     res.status(500).json(error);
