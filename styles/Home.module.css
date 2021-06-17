@@ -162,6 +162,15 @@
   top: 14px;
 }
 
+.countDown {
+  font-size: 40px;
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+}
+
 @media screen and (max-width: 700px) {
   .table {
     width: 100%;
@@ -177,5 +186,19 @@
 
   .teamRecordFrontText{
     font-size: small;
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+  .countDown {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .countDown {
+    position: unset;
+    padding: 2px;
   }
 }

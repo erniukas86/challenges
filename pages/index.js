@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ReactModal from 'react-modal';
+import Countdown from 'react-countdown';
 import styles from '../styles/Home.module.css';
 import { getChallenge } from '../services/challenge';
 import { getAthleteName, getAthleteAvatar, athleteMap } from '../services/athlete';
@@ -109,12 +110,23 @@ function Home({ challenge }) {
     return result.toFixed(2);
   };
 
+  const getCountDownDate = () => {
+    const finishDate = new Date(2021, 7, 1);
+    const today = new Date();
+    const diff = finishDate.getTime() - today.getTime();
+    return Date.now() + diff;
+  };
+
   return (
     <div className={styles.container}>
       <h2>
         {challenge.name}
         <button onClick={openGoalDialog} className={styles.goalButton} type="button">SET YOUR GOAL!</button>
       </h2>
+      {/* <span className={styles.countDown}>55 days 2:45:22</span> */}
+      <Countdown className={styles.countDown} date={getCountDownDate()}>
+        <span>Finished!</span>
+      </Countdown>
       <h4>{challenge.description}</h4>
       <ProgressBar text={teamProgressText} percent={teamProgressInPercent} />
       <table className={styles.table}>
