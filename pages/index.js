@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import ReactModal from 'react-modal';
-import Countdown from 'react-countdown';
+import Countdown, { zeroPad } from 'react-countdown';
 import styles from '../styles/Home.module.css';
 import { getChallenge } from '../services/challenge';
 import { getAthleteName, getAthleteAvatar, athleteMap } from '../services/athlete';
@@ -117,6 +117,26 @@ function Home({ challenge }) {
     return Date.now() + diff;
   };
 
+  const renderer = ({
+    days, hours, minutes, seconds, completed,
+  }) => {
+    if (completed) {
+      return <span>Finished!</span>;
+    }
+    // Render a countdown
+    return (
+      <span className={styles.countDown}>
+        {`${zeroPad(days)} days`}
+        <br />
+        {zeroPad(hours)}
+        :
+        {zeroPad(minutes)}
+        :
+        {zeroPad(seconds)}
+      </span>
+    );
+  };
+
   return (
     <div className={styles.container}>
       <h2>
@@ -124,7 +144,7 @@ function Home({ challenge }) {
         <button onClick={openGoalDialog} className={styles.goalButton} type="button">SET YOUR GOAL!</button>
       </h2>
       {/* <span className={styles.countDown}>55 days 2:45:22</span> */}
-      <Countdown className={styles.countDown} date={getCountDownDate()}>
+      <Countdown renderer={renderer} date={getCountDownDate()}>
         <span>Finished!</span>
       </Countdown>
       <h4>{challenge.description}</h4>
