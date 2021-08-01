@@ -59,13 +59,33 @@ export const athleteMap = {
     name: 'Klaidas Pilkis',
     avatar: '980385af-64fa-4868-bfb8-bef3c74d1720.png',
   },
-  'liudasj.': {
-    name: 'Liudas Jonušas',
-    avatar: '8acbeb25-ffee-4722-b718-a49b87a141c8.jpg',
-  },
   'sandraž.': {
     name: 'Sandra Žemaitaitytė',
     avatar: 'f2914e1c-e7fe-494b-9cb6-6d3803bb8c67.jpg',
+  },
+  'eglėj.': {
+    name: 'Eglė Juškevičienė',
+    avatar: '442fd1b2-8a57-4454-9a3a-2fa8de8308a1.jpg',
+  },
+  'raimondap.': {
+    name: 'Raimonda Preimonaitė',
+    avatar: '5f0e5c60-b3a0-489b-912a-75d010bc3de1.jpg',
+  },
+  'mildag.': {
+    name: 'Milda Gaulienė',
+    avatar: '23f7b52a-3e93-42a5-99ef-88a0126118cd.jpg',
+  },
+  'danilk.': {
+    name: 'Danil Kurevin',
+    avatar: 'bce026c3-7734-4a37-96bb-c6e615740a3a.jpg',
+  },
+  'mantasr.': {
+    name: 'Mantas Reika',
+    avatar: 'cd95a6dd-ec40-414f-b32b-69868e22bffa.jpg',
+  },
+  'oļegsč.': {
+    name: 'Oļegs Čapligins',
+    avatar: '9fcade4a-c1c5-4d85-9f75-df13684555ad.jpg',
   },
 };
 

@@ -41,11 +41,13 @@ function Home({ challenge }) {
 
   let teamTotalKm = 0;
 
-  const activities = challenge.items.filter((x) => athleteMap[x.name.toLowerCase()]);
+  let activities = challenge.items.filter((x) => athleteMap[x.name.toLowerCase()]);
 
   activities.forEach((element) => {
     teamTotalKm += element.total;
   });
+
+  activities = activities.filter((x) => x.total > 0);
 
   teamTotalKm /= 1000;
 
@@ -100,7 +102,7 @@ function Home({ challenge }) {
   const calculateKmPerDay = (item) => {
     let result = parseInt(goal, 10) - item.total / 1000;
 
-    const endDate = new Date(2021, 7, 1);
+    const endDate = new Date(2021, 9, 1);
     const now = new Date();
     const diffTime = Math.abs(endDate - now);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -111,7 +113,7 @@ function Home({ challenge }) {
   };
 
   const getCountDownDate = () => {
-    const finishDate = new Date(2021, 7, 1);
+    const finishDate = new Date(2021, 9, 1);
     const today = new Date();
     const diff = finishDate.getTime() - today.getTime();
     return Date.now() + diff;
