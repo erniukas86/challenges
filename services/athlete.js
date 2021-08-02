@@ -81,7 +81,7 @@ export const athleteMap = {
   },
   'mantasr.': {
     name: 'Mantas Reika',
-    avatar: 'cd95a6dd-ec40-414f-b32b-69868e22bffa.jpg',
+    avatar: 'cd95a6dd-ec40-414f-b32b-69868e22bffa.JPG',
   },
   'oļegsč.': {
     name: 'Oļegs Čapligins',
