@@ -87,6 +87,10 @@ export const athleteMap = {
     name: 'Oļegs Čapligins',
     avatar: '9fcade4a-c1c5-4d85-9f75-df13684555ad.jpg',
   },
+  'normantass.': {
+    name: 'Normantas Stankevičius',
+    avatar: 'ff45be1c-dfbe-4b3e-9dbe-1b5b1ffe7457.png',
+  },
 };
 
 export function getAthleteName(name) {
