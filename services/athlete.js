@@ -69,7 +69,7 @@ export const athleteMap = {
   },
   'raimondap.': {
     name: 'Raimonda Preimonaitė',
-    avatar: '5f0e5c60-b3a0-489b-912a-75d010bc3de1.jpg',
+    avatar: '5f0e5c60-b3a0-489b-912a-75d010bc3de1.jpeg',
   },
   'mildag.': {
     name: 'Milda Gaulienė',
