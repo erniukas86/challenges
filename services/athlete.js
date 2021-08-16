@@ -91,6 +91,10 @@ export const athleteMap = {
     name: 'Normantas Stankevičius',
     avatar: 'ff45be1c-dfbe-4b3e-9dbe-1b5b1ffe7457.png',
   },
+  'gintares.': {
+    name: 'Gintarė Sabaliauskaitė',
+    avatar: '29ce9d40-ffff-42c3-8871-a5eb4beb002e.jpg',
+  },
 };
 
 export function getAthleteName(name) {

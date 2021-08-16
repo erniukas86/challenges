@@ -119,6 +119,7 @@ function calculateTotals(challenge) {
 }
 
 function applyModifier(result) {
+  console.log('result', result);
   const modifiers = {
     'dariuso.': 0,
     'simasb.': 0,
@@ -142,6 +143,7 @@ function applyModifier(result) {
     'mantasr.': 0,
     'oļegsč.': 0,
     'normantass.': 0,
+    'gintares.': 0,
   };
 
   const keys = Object.keys(modifiers);
