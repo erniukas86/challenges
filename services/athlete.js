@@ -95,6 +95,10 @@ export const athleteMap = {
     name: 'Gintarė Sabaliauskaitė',
     avatar: '29ce9d40-ffff-42c3-8871-a5eb4beb002e.jpg',
   },
+  'tadask.': {
+    name: 'Tadas Kučinskas',
+    avatar: '842b4c2e-2404-4c41-a9ff-0faeec05d6fc.jpg',
+  },
 };
 
 export function getAthleteName(name) {
