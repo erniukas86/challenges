@@ -99,6 +99,10 @@ export const athleteMap = {
     name: 'Tadas Kučinskas',
     avatar: '842b4c2e-2404-4c41-a9ff-0faeec05d6fc.jpg',
   },
+  'robertask.': {
+    name: 'Robertas Kalninis',
+    avatar: '705fb1ac-149a-4d85-8812-b1e880f4931b.jpg',
+  },
 };
 
 export function getAthleteName(name) {
