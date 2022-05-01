@@ -95,6 +95,14 @@ export const athleteMap = {
     name: 'Robertas Kalninis',
     avatar: '705fb1ac-149a-4d85-8812-b1e880f4931b.jpg',
   },
+  'vaidas.': {
+    name: 'Vaida Stanionytė',
+    avatar: 'd0aba2fe-e55d-4171-bde0-a2f79a9b44aa.jpg',
+  },
+  'rokassi.': {
+    name: 'Rokas Sičiovas',
+    avatar: '22a9066d-28cc-4969-b6cc-a3fd110b9e32.jpg',
+  },
 };
 
 export function getAthleteName(name) {

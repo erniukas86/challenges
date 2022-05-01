@@ -24,6 +24,7 @@ async function getClubActivities(token) {
       Authorization: `Bearer ${token}`,
     },
   });
+
   return response.data;
 }
 
@@ -98,7 +99,11 @@ function calculateTotals(challenge) {
   for (let index = 0; index < challenge.items.length; index++) {
     const workout = challenge.items[index];
 
-    const athleteName = `${workout.athlete.firstname}${workout.athlete.lastname}`;
+    let athleteName = `${workout.athlete.firstname}${workout.athlete.lastname}`;
+
+    if (athleteName.toLocaleLowerCase() === 'rokass.' && workout.name.toLocaleLowerCase().indexOf('pc running') > -1) {
+      athleteName = 'rokassi.';
+    }
 
     const item = result.items.find((x) => x.name === athleteName);
 
@@ -140,6 +145,8 @@ function applyModifier(result) {
     'oļegsč.': 0,
     'tadask.': 0,
     'robertask.': 0,
+    'vaidas.': 0,
+    'rokassi.': 0,
   };
 
   const keys = Object.keys(modifiers);
