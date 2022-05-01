@@ -63,10 +63,6 @@ export const athleteMap = {
     name: 'Sandra Žemaitaitytė',
     avatar: 'f2914e1c-e7fe-494b-9cb6-6d3803bb8c67.jpg',
   },
-  'eglėj.': {
-    name: 'Eglė Juškevičienė',
-    avatar: '442fd1b2-8a57-4454-9a3a-2fa8de8308a1.jpg',
-  },
   'raimondap.': {
     name: 'Raimonda Preimonaitė',
     avatar: '5f0e5c60-b3a0-489b-912a-75d010bc3de1.jpeg',
@@ -90,10 +86,6 @@ export const athleteMap = {
   'normantass.': {
     name: 'Normantas Stankevičius',
     avatar: 'ff45be1c-dfbe-4b3e-9dbe-1b5b1ffe7457.png',
-  },
-  'gintares.': {
-    name: 'Gintarė Sabaliauskaitė',
-    avatar: '29ce9d40-ffff-42c3-8871-a5eb4beb002e.jpg',
   },
   'tadask.': {
     name: 'Tadas Kučinskas',

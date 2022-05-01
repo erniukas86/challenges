@@ -24,7 +24,6 @@ async function getClubActivities(token) {
       Authorization: `Bearer ${token}`,
     },
   });
-
   return response.data;
 }
 
@@ -120,31 +119,27 @@ function calculateTotals(challenge) {
 
 function applyModifier(result) {
   const modifiers = {
-    'dariuso.': 296890,
-    'simasb.': 9650,
-    'henrikasm.': 13300,
+    'dariuso.': 0,
+    'henrikasm.': 0,
     'simasv.': 0,
     'petern.': 0,
-    'erniukasb.': 519340,
-    'edgarasa.': 1000010,
+    'erniukasb.': 0,
+    'edgarasa.': 0,
     'rokass.': 0,
-    'pauliusv.': 63670,
-    'martynasj.': 621330,
+    'pauliusv.': 0,
+    'martynasj.': 0,
     'audriusl.': 0,
     'klaidasp.': 0,
-    'sandraž.': 285960,
-    'andrejusi.': 20570,
+    'sandraž.': 0,
+    'andrejusi.': 0,
     'edvinasv.': 0,
-    'eglėj.': 982810,
-    'raimondap.': 66580,
+    'raimondap.': 0,
     'mildag.': 0,
     'danilk.': 0,
-    'mantasr.': 306610,
+    'mantasr.': 0,
     'oļegsč.': 0,
-    'normantass.': 12790,
-    'gintares.': 79260,
-    'tadask.': 61890,
-    'robertask.': 75420,
+    'tadask.': 0,
+    'robertask.': 0,
   };
 
   const keys = Object.keys(modifiers);
