@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import ReactModal from 'react-modal';
 import Countdown, { zeroPad } from 'react-countdown';
 import styles from '../styles/Home.module.css';
-import { getChallenge } from '../services/challenge';
 import { getAthleteName, getAthleteAvatar, athleteMap } from '../services/athlete';
 import ProgressBar from '../components/progressBar';
+import { get } from './api/challenge';
 
 const customStyles = {
   content: {
@@ -241,7 +241,7 @@ function Home({ challenge }) {
 }
 
 export async function getStaticProps() {
-  const challenge = await getChallenge();
+  const challenge = await get();
 
   return {
     props: {

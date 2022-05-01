@@ -165,6 +165,16 @@ function applyModifier(result) {
   return result;
 }
 
+export async function get() {
+  const token = await getAccessToken();
+
+  const activities = await getClubActivities(token);
+  const savedActivities = await readSavedActivities();
+  let result = await saveNewActivities(activities, savedActivities);
+  result = calculateTotals(result);
+  return applyModifier(result);
+}
+
 export default async (req, res) => {
   try {
     const token = await getAccessToken();
