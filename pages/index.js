@@ -102,7 +102,7 @@ function Home({ challenge }) {
   const calculateKmPerDay = (item) => {
     let result = parseInt(goal, 10) - item.total / 1000;
 
-    const endDate = new Date(2021, 9, 1);
+    const endDate = new Date(2022, 7, 1);
     const now = new Date();
     const diffTime = Math.abs(endDate - now);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
