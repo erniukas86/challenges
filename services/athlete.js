@@ -103,6 +103,10 @@ export const athleteMap = {
     name: 'Rokas Sičiovas',
     avatar: '22a9066d-28cc-4969-b6cc-a3fd110b9e32.jpg',
   },
+  'egidijusr.': {
+    name: 'Egidijus Rubys',
+    avatar: 'b2478476-f027-49a7-ab94-d9be06b3d0cf.jpg',
+  },
 };
 
 export function getAthleteName(name) {

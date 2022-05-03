@@ -25,6 +25,8 @@ async function getClubActivities(token) {
     },
   });
 
+  console.log('getClubActivities', response.data[0]);
+
   return response.data;
 }
 
@@ -147,6 +149,7 @@ function applyModifier(result) {
     'robertask.': 0,
     'vaidas.': 0,
     'rokassi.': 0,
+    'egidijusr.': 0,
   };
 
   const keys = Object.keys(modifiers);
