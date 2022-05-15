@@ -150,6 +150,7 @@ function applyModifier(result) {
     'vaidas.': 0,
     'rokassi.': 0,
     'egidijusr.': 0,
+    'juozasn.': 0,
   };
 
   const keys = Object.keys(modifiers);

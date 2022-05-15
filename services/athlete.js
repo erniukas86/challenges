@@ -65,7 +65,7 @@ export const athleteMap = {
   },
   'raimondap.': {
     name: 'Raimonda Preimonaitė',
-    avatar: '5f0e5c60-b3a0-489b-912a-75d010bc3de1.jpeg',
+    avatar: '1fc73cf3-60f5-4637-b0bd-5ea3298ee43b.jpg',
   },
   'mildag.': {
     name: 'Milda Gaulienė',
@@ -106,6 +106,10 @@ export const athleteMap = {
   'egidijusr.': {
     name: 'Egidijus Rubys',
     avatar: 'b2478476-f027-49a7-ab94-d9be06b3d0cf.jpg',
+  },
+  'juozasn.': {
+    name: 'Juozas Narkevičius',
+    avatar: '7c3cf75d-5a22-4cb8-b99f-6e08bd28e4e4.jpg',
   },
 };
 
