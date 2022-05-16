@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 import { getAthleteName, getAthleteAvatar, athleteMap } from '../services/athlete';
 import ProgressBar from '../components/progressBar';
 import { get } from './api/challenge';
+import CheckpointsBar from '../components/progressBar/checkpoints';
 
 const customStyles = {
   content: {
@@ -150,7 +151,7 @@ function Home({ challenge }) {
         <span>Finished!</span>
       </Countdown>
       <h4>{challenge.description}</h4>
-      <ProgressBar text={teamProgressText} percent={teamProgressInPercent} />
+      <CheckpointsBar text={teamProgressText} percent={teamProgressInPercent} total={teamTotalKm} />
       <table className={styles.table}>
         <thead>
           <th>Rank</th>

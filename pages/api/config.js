@@ -7,6 +7,10 @@ export const config = {
   challengeStartId: '6001.42159222216.8',
   challengeTeamRecord: 4637,
   challengeDescription: 'Rewards: >75Km: individual medals. Top 3: Special prizes and infinite glory.',
+  kmToProAlpha: 1623,
+  kmToDutchOffice: 2101,
+  kmForAllDutchCustomers: 2415,
+  kmToKaunasOffice: 4065,
 };
 
 export const stravaEndpoints = {
