@@ -111,6 +111,10 @@ export const athleteMap = {
     name: 'Juozas Narkevičius',
     avatar: '7c3cf75d-5a22-4cb8-b99f-6e08bd28e4e4.jpg',
   },
+  'maj0rboobzp.': {
+    name: 'Paulius Juknis',
+    avatar: '9489433a-ce2f-4596-ac0e-0e5a0d49fd41.jpg',
+  },
 };
 
 export function getAthleteName(name) {
