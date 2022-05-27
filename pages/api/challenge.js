@@ -25,7 +25,7 @@ async function getClubActivities(token) {
     },
   });
 
-  console.log('getClubActivities', response.data[0]);
+  console.log('getClubActivities', response.data);
 
   return response.data;
 }
@@ -126,31 +126,31 @@ function calculateTotals(challenge) {
 
 function applyModifier(result) {
   const modifiers = {
-    'dariuso.': 0,
+    'dariuso.': 96200,
     'henrikasm.': 0,
-    'simasv.': 0,
-    'petern.': 0,
-    'erniukasb.': 0,
-    'edgarasa.': 0,
-    'rokass.': 0,
-    'pauliusv.': 0,
-    'martynasj.': 0,
-    'audriusl.': 0,
-    'klaidasp.': 0,
-    'sandraž.': 0,
-    'andrejusi.': 0,
+    'simasv.': 22300,
+    'petern.': 14600,
+    'erniukasb.': 254800,
+    'edgarasa.': 109300,
+    'rokass.': 4000,
+    'pauliusv.': 173300,
+    'martynasj.': 77100,
+    'audriusl.': 16400,
+    'klaidasp.': 129900,
+    'sandraž.': 7700,
+    'andrejusi.': 228400,
     'edvinasv.': 0,
-    'raimondap.': 0,
+    'raimondap.': 33900,
     'mildag.': 0,
     'danilk.': 0,
-    'mantasr.': 0,
+    'mantasr.': 28400,
     'oļegsč.': 0,
-    'tadask.': 0,
+    'tadask.': 8000,
     'robertask.': 0,
-    'vaidas.': 0,
-    'rokassi.': 0,
-    'egidijusr.': 0,
-    'juozasn.': 0,
+    'vaidas.': 102300,
+    'rokassi.': 25500,
+    'egidijusr.': 24900,
+    'juozasn.': 16300,
     'maj0rboobzp.': 0,
   };
 
