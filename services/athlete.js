@@ -115,6 +115,10 @@ export const athleteMap = {
     name: 'Paulius Juknis',
     avatar: '9489433a-ce2f-4596-ac0e-0e5a0d49fd41.jpg',
   },
+  'tomasb.': {
+    name: 'Tomas Banys',
+    avatar: 'd66e2646-24b2-478f-8f85-e0be08be818f.JPG',
+  },
 };
 
 export function getAthleteName(name) {
