@@ -119,6 +119,10 @@ export const athleteMap = {
     name: 'Tomas Banys',
     avatar: 'd66e2646-24b2-478f-8f85-e0be08be818f.JPG',
   },
+  'justinasl.': {
+    name: 'Justinas Lažauninkas',
+    avatar: '54ca079c-7393-4b78-b931-ee2e7bfa1864.png',
+  },
 };
 
 export function getAthleteName(name) {
