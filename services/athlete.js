@@ -21,7 +21,7 @@ export const athleteMap = {
   },
   'erniukasb.': {
     name: 'Ernestas Burokas',
-    avatar: '16e172c8-9b6f-4c90-b94d-9eadc4762d31.jpg',
+    avatar: '5114ef83-251a-4f3b-857f-b601635a124e.jpg',
   },
   'edgarasa.': {
     name: 'Edgaras Abromaitis',
