@@ -123,6 +123,10 @@ export const athleteMap = {
     name: 'Justinas Lažauninkas',
     avatar: '54ca079c-7393-4b78-b931-ee2e7bfa1864.png',
   },
+  'aurimass.': {
+    name: 'Aurimas Stanaitis',
+    avatar: '33a62878-3622-4d75-9b36-db0c6c3bfb1b.jpg',
+  },
 };
 
 export function getAthleteName(name) {

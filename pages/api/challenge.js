@@ -155,6 +155,7 @@ function applyModifier(result) {
     'tomasb.': 34950,
     'mindaugass.': 4330,
     'justinasl.': 6660,
+    'aurimass.': 0,
   };
 
   const keys = Object.keys(modifiers);
