@@ -127,6 +127,10 @@ export const athleteMap = {
     name: 'Aurimas Stanaitis',
     avatar: '33a62878-3622-4d75-9b36-db0c6c3bfb1b.jpg',
   },
+  'karolisv.': {
+    name: 'Karolis Vaitelė',
+    avatar: '990e1ac3-ce91-4dac-a82f-1d160782e2b1.jpg',
+  },
 };
 
 export function getAthleteName(name) {
