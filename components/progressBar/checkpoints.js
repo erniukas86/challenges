@@ -66,15 +66,25 @@ export default function CheckpointsBar({ percent, unsetWidth, total }) {
     return 0;
   };
 
+  const getRecordBeatBy = () => total - config.challengeTeamRecord;
+
+  const isRecordBeat = total > config.challengeTeamRecord;
+
   return (
     <>
       <h4>
-        {total.toFixed(2)}
-        KM already done.
-        {` ${getKmUntilNextChekcpoint().toFixed(2)} `}
-        KM until
-        {' '}
-        {getTextUntilNextChekcpoint()}
+        {`${total.toFixed(2)} KM already done.`}
+        {!isRecordBeat && (
+        <>
+          {` ${getKmUntilNextChekcpoint().toFixed(2)} `}
+          KM until
+          {' '}
+          {getTextUntilNextChekcpoint()}
+        </>
+        )}
+
+        {isRecordBeat && ` WE BEAT RECORD BY: ${getRecordBeatBy().toFixed(2)} KM`}
+
       </h4>
 
       <div style={{ height: '50px', position: 'relative' }}>
