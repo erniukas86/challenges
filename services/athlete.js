@@ -131,6 +131,10 @@ export const athleteMap = {
     name: 'Karolis Vaitelė',
     avatar: '990e1ac3-ce91-4dac-a82f-1d160782e2b1.jpg',
   },
+  'elektrinisp.': {
+    name: 'Elektrinis Paspirtukas',
+    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+  },
 };
 
 export function getAthleteName(name) {
