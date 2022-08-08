@@ -158,6 +158,8 @@ function applyModifier(result) {
     'aurimass.': 0,
     'karolisv.': 0,
     'elektrinisp.': 0,
+    'liudvikasg.': 0,
+    'aleksandrasn.': 0,
   };
 
   const keys = Object.keys(modifiers);

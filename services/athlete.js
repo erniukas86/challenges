@@ -135,6 +135,14 @@ export const athleteMap = {
     name: 'Elektrinis Paspirtukas',
     avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
   },
+  'liudvikasg.': {
+    name: 'Liudvikas Griškus',
+    avatar: '0c66eb2d-9718-4907-993c-45c966bba2ea.png',
+  },
+  'aleksandrasn.': {
+    name: 'Alesandras Naruševič',
+    avatar: 'c45c1242-78fc-4f64-92bb-035e083e0601.jpg',
+  },
 };
 
 export function getAthleteName(name) {
