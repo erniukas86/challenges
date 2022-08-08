@@ -140,7 +140,7 @@ export const athleteMap = {
     avatar: '0c66eb2d-9718-4907-993c-45c966bba2ea.png',
   },
   'aleksandrasn.': {
-    name: 'Alesandras Naruševič',
+    name: 'Aleksandras Naruševič',
     avatar: 'c45c1242-78fc-4f64-92bb-035e083e0601.jpg',
   },
 };
