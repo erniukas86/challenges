@@ -4,7 +4,7 @@ export const config = {
   refreshToken: '0c3867795fc7196384bd4f85c472860fff40b985',
   stravaApiUrl: 'https://www.strava.com/api/v3',
   challengeName: 'PC CYCLING CHALLENGE 2022',
-  challengeStartId: '40758.968607415107.2',
+  challengeStartId: '8425.21878191621.8',
   challengeTeamRecord: 4655,
   challengeDescription: 'Rewards: >200Km: individual medals. Top 3: Special prizes and infinite glory.',
   kmToProAlpha: 1623,
