@@ -19,20 +19,16 @@ export default function CheckpointsBar({ percent, unsetWidth, total }) {
   };
 
   const getKmUntilNextChekcpoint = () => {
-    if (total < config.kmToProAlpha) {
-      return config.kmToProAlpha - total;
+    if (total < config.kmToGermany) {
+      return config.kmToGermany - total;
     }
 
-    if (total < config.kmToDutchOffice) {
-      return config.kmToDutchOffice - total;
+    if (total < config.kmToNetherlands) {
+      return config.kmToNetherlands - total;
     }
 
-    if (total < config.kmForAllDutchCustomers) {
-      return config.kmForAllDutchCustomers - total;
-    }
-
-    if (total < config.kmToKaunasOffice) {
-      return config.kmToKaunasOffice - total;
+    if (total < config.kmToSpain) {
+      return config.kmToSpain - total;
     }
 
     if (total < config.challengeTeamRecord) {
@@ -43,20 +39,16 @@ export default function CheckpointsBar({ percent, unsetWidth, total }) {
   };
 
   const getTextUntilNextChekcpoint = () => {
-    if (total < config.kmToProAlpha) {
-      return 'visit to ProAlpha!';
+    if (total < config.kmToGermany) {
+      return 'we reach Germany!';
     }
 
-    if (total < config.kmToDutchOffice) {
-      return 'visit Peter and Richard!';
+    if (total < config.kmToNetherlands) {
+      return 'we reach Netherlands!';
     }
 
-    if (total < config.kmForAllDutchCustomers) {
+    if (total < config.kmToSpain) {
       return 'visit all dutch customers!';
-    }
-
-    if (total < config.kmToKaunasOffice) {
-      return 'come back to Kaunas office';
     }
 
     if (total < config.challengeTeamRecord) {
@@ -97,38 +89,30 @@ export default function CheckpointsBar({ percent, unsetWidth, total }) {
           />
         </div>
         <div className={styles.checkpoint} style={{ backgroundColor: '#eed59a', left: 'calc(0% - 15px)' }}>
-          <img alt="start" src="/start.png" className={styles.checkpointIcon} />
+          <img alt="start" src="/pc-lt.png" className={styles.checkpointIcon} />
         </div>
-        <div className={styles.checkpoint} style={{ left: 'calc(35% - 15px)' }}>
+        <div className={styles.checkpoint} style={{ left: 'calc(22% - 15px)' }}>
           <img
             alt="start"
-            src="/proAlpha.png"
+            src="/germany.jpg"
             className={styles.checkpointIcon}
-            style={{ opacity: getOpacity('kmToProAlpha') }}
+            style={{ opacity: getOpacity('kmToGermany') }}
           />
         </div>
-        <div className={styles.checkpoint} style={{ left: 'calc(45% - 15px)' }}>
+        <div className={styles.checkpoint} style={{ left: 'calc(30% - 15px)' }}>
           <img
             alt="start"
             className={styles.checkpointIcon}
             src="/pc-nl.png"
-            style={{ opacity: getOpacity('kmToDutchOffice') }}
+            style={{ opacity: getOpacity('kmToNetherlands') }}
           />
         </div>
-        <div className={styles.checkpoint} style={{ left: 'calc(52% - 15px)' }}>
+        <div className={styles.checkpoint} style={{ left: 'calc(60% - 15px)' }}>
           <img
             alt="start"
             className={styles.checkpointIcon}
-            src="/customers.png"
-            style={{ opacity: getOpacity('kmForAllDutchCustomers') }}
-          />
-        </div>
-        <div className={styles.checkpoint} style={{ left: 'calc(87% - 15px)' }}>
-          <img
-            alt="start"
-            className={styles.checkpointIcon}
-            src="/pc-lt.png"
-            style={{ opacity: getOpacity('kmToKaunasOffice') }}
+            src="/spain.png"
+            style={{ opacity: getOpacity('kmToSpain') }}
           />
         </div>
         <div className={styles.checkpoint} style={{ left: 'calc(100% - 15px)' }}>

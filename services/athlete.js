@@ -3,14 +3,6 @@ export const athleteMap = {
     name: 'Darius Orvidas',
     avatar: '4ce9e897-9d5a-4e33-b0f3-832143552b02.jpg',
   },
-  'simasb.': {
-    name: 'Simas Bakus',
-    avatar: 'f80137ee-79f1-4f30-a797-870386de90e3.jpg',
-  },
-  'henrikasm.': {
-    name: 'Henrikas Miliūnas',
-    avatar: '42404403-845d-4435-97c9-3e0b954591d9.jpg',
-  },
   'simasv.': {
     name: 'Simas Veleckas',
     avatar: 'a50a2428-c4bf-4ffe-bd68-fcba1942f902.png',
@@ -35,10 +27,6 @@ export const athleteMap = {
     name: 'Rokas Sidaravičius',
     avatar: '2360c973-7a42-490e-a014-cc17645efb8a.jpg',
   },
-  'pauliusv.': {
-    name: 'Paulius Vaitkevičius',
-    avatar: '446e16b5-d482-46b8-92be-52beb86284b5.png',
-  },
   'martynasj.': {
     name: 'Martynas Juzaitis',
     avatar: '8bc01fc1-5fe4-4741-b8c5-b0545593e052.jpg',
@@ -46,10 +34,6 @@ export const athleteMap = {
   'mindaugass.': {
     name: 'Mindaugas Stanionis',
     avatar: '90ef9116-0eb6-4e12-ba43-b06a55becd41.jpg',
-  },
-  'audriusl.': {
-    name: 'Audrius Lukoševičius',
-    avatar: '882a5bc3-3990-451a-ad5d-f0354da953fc.jpg',
   },
   'andrejusi.': {
     name: 'Andrejus Ivaščenko',
@@ -67,10 +51,6 @@ export const athleteMap = {
     name: 'Raimonda Preimonaitė',
     avatar: '1fc73cf3-60f5-4637-b0bd-5ea3298ee43b.jpg',
   },
-  'mildag.': {
-    name: 'Milda Gaulienė',
-    avatar: '23f7b52a-3e93-42a5-99ef-88a0126118cd.jpg',
-  },
   'danilk.': {
     name: 'Danil Kurevin',
     avatar: 'bce026c3-7734-4a37-96bb-c6e615740a3a.jpg',
@@ -82,10 +62,6 @@ export const athleteMap = {
   'oļegsč.': {
     name: 'Oļegs Čapligins',
     avatar: '9fcade4a-c1c5-4d85-9f75-df13684555ad.jpg',
-  },
-  'normantass.': {
-    name: 'Normantas Stankevičius',
-    avatar: 'ff45be1c-dfbe-4b3e-9dbe-1b5b1ffe7457.png',
   },
   'tadask.': {
     name: 'Tadas Kučinskas',
@@ -107,21 +83,13 @@ export const athleteMap = {
     name: 'Egidijus Rubys',
     avatar: 'b2478476-f027-49a7-ab94-d9be06b3d0cf.jpg',
   },
-  'juozasn.': {
-    name: 'Juozas Narkevičius',
-    avatar: '7c3cf75d-5a22-4cb8-b99f-6e08bd28e4e4.jpg',
-  },
-  'maj0rboobzp.': {
-    name: 'Paulius Juknis',
-    avatar: '9489433a-ce2f-4596-ac0e-0e5a0d49fd41.jpg',
-  },
   'tomasb.': {
     name: 'Tomas Banys',
     avatar: 'd66e2646-24b2-478f-8f85-e0be08be818f.JPG',
   },
   'justinasl.': {
     name: 'Justinas Lažauninkas',
-    avatar: '54ca079c-7393-4b78-b931-ee2e7bfa1864.png',
+    avatar: 'eb874ec3-3d20-4cdf-a76b-a90954b3bd6c.jpg',
   },
   'aurimass.': {
     name: 'Aurimas Stanaitis',
@@ -142,6 +110,22 @@ export const athleteMap = {
   'aleksandrasn.': {
     name: 'Aleksandras Naruševič',
     avatar: 'c45c1242-78fc-4f64-92bb-035e083e0601.jpg',
+  },
+  'rytisj.': {
+    name: 'Rytis Juozulevičius',
+    avatar: '712ad1bf-a2b2-4a9a-b672-209406ada582.png',
+  },
+  'cristinam.': {
+    name: 'Cristina Moreno',
+    avatar: 'a0782dfd-139b-41b6-a171-313078c6168a.png',
+  },
+  'tamásk.': {
+    name: 'Tamás Kaszab',
+    avatar: 'e4da5a7c-8428-43fb-aaff-a1bbce9ef0a0.png',
+  },
+  'ferl.': {
+    name: 'Fernando Lopera',
+    avatar: '7f7364d8-b06a-44ab-ae7c-cf327344d5bb.png',
   },
 };
 
