@@ -127,6 +127,10 @@ export const athleteMap = {
     name: 'Fernando Lopera',
     avatar: '7f7364d8-b06a-44ab-ae7c-cf327344d5bb.png',
   },
+  'johanh.': {
+    name: 'Johan Hus',
+    avatar: '77cb2926-800d-43d1-96c2-d7b2ed9834c7.jpg',
+  },
 };
 
 export function getAthleteName(name) {
