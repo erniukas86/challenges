@@ -131,6 +131,10 @@ export const athleteMap = {
     name: 'Johan Hus',
     avatar: '77cb2926-800d-43d1-96c2-d7b2ed9834c7.jpg',
   },
+  'gintarėž.': {
+    name: 'Gintarė Žilinskė',
+    avatar: '3de601f8-f797-4052-8ab1-ff016d7b06b9.jpg',
+  },
 };
 
 export function getAthleteName(name) {
