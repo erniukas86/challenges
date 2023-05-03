@@ -192,7 +192,7 @@ function Home({ challenge }) {
               <div
                 className={styles.kmPerdayText}
               >
-                Ride
+                Run
                 <span>
                   {' '}
                   {calculateKmPerDay(item)}

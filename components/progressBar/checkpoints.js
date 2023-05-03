@@ -48,7 +48,7 @@ export default function CheckpointsBar({ percent, unsetWidth, total }) {
     }
 
     if (total < config.kmToSpain) {
-      return 'visit all dutch customers!';
+      return 'we reach Spain!';
     }
 
     if (total < config.challengeTeamRecord) {
