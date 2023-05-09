@@ -25,7 +25,7 @@ async function getClubActivities(token) {
     },
   });
 
-  console.log('getClubActivities', response.data[5]);
+  console.log('getClubActivities', response.data[1]);
 
   return response.data;
 }
@@ -160,6 +160,7 @@ function applyModifier(result) {
     'ferl.': 0,
     'johanh.': 34200,
     'gintarėž.': 0,
+    'deividask.': 0,
   };
 
   const keys = Object.keys(modifiers);

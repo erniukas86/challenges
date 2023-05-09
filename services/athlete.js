@@ -135,6 +135,10 @@ export const athleteMap = {
     name: 'Gintarė Žilinskė',
     avatar: '3de601f8-f797-4052-8ab1-ff016d7b06b9.jpg',
   },
+  'deividask.': {
+    name: 'Deividas Knoraitis',
+    avatar: '24f9dc77-3eb5-465b-9b22-a594a95e1bf8.jpeg',
+  },
 };
 
 export function getAthleteName(name) {
