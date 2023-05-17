@@ -139,6 +139,10 @@ export const athleteMap = {
     name: 'Deividas Knoraitis',
     avatar: '24f9dc77-3eb5-465b-9b22-a594a95e1bf8.jpeg',
   },
+  'matast.': {
+    name: 'Matas Togobickij',
+    avatar: 'ed12ae84-e4d2-4258-96f2-31cc11fc74c0.png',
+  },
 };
 
 export function getAthleteName(name) {
