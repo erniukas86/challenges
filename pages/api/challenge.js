@@ -162,6 +162,7 @@ function applyModifier(result) {
     'gintarėž.': 3330,
     'deividask.': 10140,
     'matast.': 19100,
+    'laimonasm.': 0,
   };
 
   const keys = Object.keys(modifiers);

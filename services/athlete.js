@@ -143,6 +143,10 @@ export const athleteMap = {
     name: 'Matas Togobickij',
     avatar: 'ed12ae84-e4d2-4258-96f2-31cc11fc74c0.png',
   },
+  'laimonasm.': {
+    name: 'Laimonas Mikelionis',
+    avatar: 'a6a69393-8391-49d8-9ff0-cde1bf5a083d.jpg',
+  },
 };
 
 export function getAthleteName(name) {
