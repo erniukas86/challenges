@@ -147,6 +147,10 @@ export const athleteMap = {
     name: 'Laimonas Mikelionis',
     avatar: 'a6a69393-8391-49d8-9ff0-cde1bf5a083d.jpg',
   },
+  'dominykasr.': {
+    name: 'Dominykas Rakūnas',
+    avatar: '4d6d494b-716a-4d87-9804-516c84223688.png',
+  },
 };
 
 export function getAthleteName(name) {
