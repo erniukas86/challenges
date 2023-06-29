@@ -156,7 +156,7 @@ function applyModifier(result) {
     'aleksandrasn.': 0,
     'rytisj.': 52420,
     'cristinam.': 195760,
-    'tamásk.': 69310,
+    'tamásk.': 90210,
     'ferl.': 17490,
     'johanh.': 52590,
     'gintarėž.': 6660,
