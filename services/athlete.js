@@ -151,6 +151,10 @@ export const athleteMap = {
     name: 'Dominykas Rakūnas',
     avatar: '4d6d494b-716a-4d87-9804-516c84223688.png',
   },
+  'deimantės.': {
+    name: 'Deimantė Simonaitytė',
+    avatar: 'df8e1dec-c2fc-4f89-91da-0d2af348899f.png',
+  },
 };
 
 export function getAthleteName(name) {
