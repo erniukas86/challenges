@@ -159,6 +159,10 @@ export const athleteMap = {
     name: 'Paulius Preikša',
     avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
   },
+  'lukasa.': {
+    name: 'Lukas Alavičius',
+    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+  },
 };
 
 export function getAthleteName(name) {

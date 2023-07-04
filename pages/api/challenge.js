@@ -25,7 +25,7 @@ async function getClubActivities(token) {
     },
   });
 
-  console.log('getClubActivities', response.data[0]);
+  console.log('getClubActivities', response.data[2]);
 
   return response.data;
 }
@@ -166,6 +166,7 @@ function applyModifier(result) {
     'dominykasr.': 0,
     'deimantės.': 0,
     'pauliusp.': 0,
+    'lukasa.': 0,
   };
 
   const keys = Object.keys(modifiers);
