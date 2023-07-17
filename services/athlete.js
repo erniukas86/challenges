@@ -163,6 +163,10 @@ export const athleteMap = {
     name: 'Justas Baniulis',
     avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
   },
+  'mantvydasr.': {
+    name: 'Mantvydas Razulevičius',
+    avatar: '05a25592-50c4-4ef8-9cbf-012962fdc651.jpg',
+  },
 };
 
 export function getAthleteName(name) {
