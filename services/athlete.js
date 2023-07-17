@@ -143,6 +143,26 @@ export const athleteMap = {
     name: 'Laimonas Mikelionis',
     avatar: 'a6a69393-8391-49d8-9ff0-cde1bf5a083d.jpg',
   },
+  'dominykasr.': {
+    name: 'Dominykas Rakūnas',
+    avatar: '4d6d494b-716a-4d87-9804-516c84223688.png',
+  },
+  'deimantės.': {
+    name: 'Deimantė Simonaitytė',
+    avatar: 'df8e1dec-c2fc-4f89-91da-0d2af348899f.png',
+  },
+  'pauliusp.': {
+    name: 'Paulius Preikša',
+    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+  },
+  'lukasa.': {
+    name: 'Lukas Alavičius',
+    avatar: '1ae674ee-8826-42df-a308-6849a559e03a.jpg',
+  },
+  'justasb.': {
+    name: 'Justas Baniulis',
+    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+  },
 };
 
 export function getAthleteName(name) {
