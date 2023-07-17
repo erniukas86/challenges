@@ -23,10 +23,6 @@ export const athleteMap = {
     name: 'Edvinas Velička',
     avatar: '8858f823-6475-48a4-a878-16bc1afd3af4.png',
   },
-  'rokass.': {
-    name: 'Rokas Sidaravičius',
-    avatar: '2360c973-7a42-490e-a014-cc17645efb8a.jpg',
-  },
   'martynasj.': {
     name: 'Martynas Juzaitis',
     avatar: '8bc01fc1-5fe4-4741-b8c5-b0545593e052.jpg',
@@ -75,7 +71,7 @@ export const athleteMap = {
     name: 'Vaida Stanionytė',
     avatar: 'd0aba2fe-e55d-4171-bde0-a2f79a9b44aa.jpg',
   },
-  'rokassi.': {
+  'rokass.': {
     name: 'Rokas Sičiovas',
     avatar: '22a9066d-28cc-4969-b6cc-a3fd110b9e32.jpg',
   },
