@@ -4,7 +4,7 @@ export const config = {
   refreshToken: '0c3867795fc7196384bd4f85c472860fff40b985',
   stravaApiUrl: 'https://www.strava.com/api/v3',
   challengeName: 'PC CYCLING CHALLENGE 2023',
-  challengeStartId: '40249.7919913423103.1',
+  challengeStartId: '81048.51482018236438.8',
   challengeTeamRecord: 9556.85,
   challengeDescription: 'Rewards: >200Km: individual medals. Top 3: Special prizes and infinite glory.',
   kmToGermany: 1279,
