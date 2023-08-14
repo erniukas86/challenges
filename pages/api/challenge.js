@@ -168,6 +168,8 @@ function applyModifier(result) {
     'lukasa.': 33880,
     'justasb.': 92300,
     'mantvydasr.': 209300,
+    'tadast.': 0,
+    'martynasš.': 0,
   };
 
   const keys = Object.keys(modifiers);

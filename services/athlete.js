@@ -167,6 +167,14 @@ export const athleteMap = {
     name: 'Mantvydas Razulevičius',
     avatar: '05a25592-50c4-4ef8-9cbf-012962fdc651.jpg',
   },
+  'tadast.': {
+    name: 'Tadas Turskis',
+    avatar: 'f7cb4ebe-9acd-477f-80e7-518cbc87e4a5.jpeg',
+  },
+  'martynasš.': {
+    name: 'Martynas Šatas',
+    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+  },
 };
 
 export function getAthleteName(name) {
