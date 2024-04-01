@@ -103,7 +103,7 @@ function Home({ challenge }) {
   const calculateKmPerDay = (item) => {
     let result = parseInt(goal, 10) - item.total / 1000;
 
-    const endDate = new Date(2023, 8, 1);
+    const endDate = new Date(2024, 6, 1);
     const now = new Date();
     const diffTime = Math.abs(endDate - now);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -114,7 +114,7 @@ function Home({ challenge }) {
   };
 
   const getCountDownDate = () => {
-    const finishDate = new Date(2023, 8, 1);
+    const finishDate = new Date(2024, 6, 1);
     const today = new Date();
     const diff = finishDate.getTime() - today.getTime();
     return Date.now() + diff;
@@ -192,7 +192,7 @@ function Home({ challenge }) {
               <div
                 className={styles.kmPerdayText}
               >
-                Cycle
+                Run
                 <span>
                   {' '}
                   {calculateKmPerDay(item)}

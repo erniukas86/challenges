@@ -171,9 +171,13 @@ export const athleteMap = {
     name: 'Tadas Turskis',
     avatar: 'f7cb4ebe-9acd-477f-80e7-518cbc87e4a5.jpeg',
   },
-  'martynasš.': {
-    name: 'Martynas Šatas',
-    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+  'žydrūnasg.': {
+    name: 'Žydrūnas Grabauskas',
+    avatar: 'b832b7e5-3d43-469e-a8f5-6fffa4388c6c.jpg',
+  },
+  'airidasž.': {
+    name: 'Airidas Žaliauskas',
+    avatar: '346934e1-35ec-4f66-b354-aa11d7b223f0.jpg',
   },
 };
 
