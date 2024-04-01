@@ -25,7 +25,7 @@ async function getClubActivities(token) {
     },
   });
 
-  console.log('getClubActivities', response.data[17]);
+  console.log('getClubActivities', response.data[6]);
 
   return response.data;
 }
@@ -131,7 +131,6 @@ function applyModifier(result) {
     'petern.': 0,
     'erniukasb.': 0,
     'edgarasa.': 0,
-    'rokass.': 0,
     'martynasj.': 0,
     'klaidasp.': 0,
     'sandraž.': 0,
@@ -144,7 +143,7 @@ function applyModifier(result) {
     'tadask.': 0,
     'robertask.': 0,
     'vaidas.': 0,
-    'rokassi.': 0,
+    'rokass.': 0,
     'egidijusr.': 0,
     'tomasb.': 0,
     'mindaugass.': 0,
@@ -157,7 +156,21 @@ function applyModifier(result) {
     'rytisj.': 0,
     'cristinam.': 0,
     'tamásk.': 0,
-    'ferl.': 0
+    'ferl.': 0,
+    'johanh.': 0,
+    'gintarėž.': 0,
+    'deividask.': 0,
+    'matast.': 0,
+    'laimonasm.': 0,
+    'dominykasr.': 0,
+    'deimantės.': 0,
+    'pauliusp.': 0,
+    'lukasa.': 0,
+    'justasb.': 0,
+    'mantvydasr.': 0,
+    'tadast.': 0,
+    'žydrūnasg.': 0,
+    'airidasž.': 0,
   };
 
   const keys = Object.keys(modifiers);

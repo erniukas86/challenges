@@ -23,10 +23,6 @@ export const athleteMap = {
     name: 'Edvinas Velička',
     avatar: '8858f823-6475-48a4-a878-16bc1afd3af4.png',
   },
-  'rokass.': {
-    name: 'Rokas Sidaravičius',
-    avatar: '2360c973-7a42-490e-a014-cc17645efb8a.jpg',
-  },
   'martynasj.': {
     name: 'Martynas Juzaitis',
     avatar: '8bc01fc1-5fe4-4741-b8c5-b0545593e052.jpg',
@@ -75,7 +71,7 @@ export const athleteMap = {
     name: 'Vaida Stanionytė',
     avatar: 'd0aba2fe-e55d-4171-bde0-a2f79a9b44aa.jpg',
   },
-  'rokassi.': {
+  'rokass.': {
     name: 'Rokas Sičiovas',
     avatar: '22a9066d-28cc-4969-b6cc-a3fd110b9e32.jpg',
   },
@@ -126,6 +122,62 @@ export const athleteMap = {
   'ferl.': {
     name: 'Fernando Lopera',
     avatar: '7f7364d8-b06a-44ab-ae7c-cf327344d5bb.png',
+  },
+  'johanh.': {
+    name: 'Johan Hus',
+    avatar: '77cb2926-800d-43d1-96c2-d7b2ed9834c7.jpg',
+  },
+  'gintarėž.': {
+    name: 'Gintarė Žilinskė',
+    avatar: '3de601f8-f797-4052-8ab1-ff016d7b06b9.jpg',
+  },
+  'deividask.': {
+    name: 'Deividas Knoraitis',
+    avatar: '24f9dc77-3eb5-465b-9b22-a594a95e1bf8.jpeg',
+  },
+  'matast.': {
+    name: 'Matas Togobickij',
+    avatar: 'ed12ae84-e4d2-4258-96f2-31cc11fc74c0.png',
+  },
+  'laimonasm.': {
+    name: 'Laimonas Mikelionis',
+    avatar: 'a6a69393-8391-49d8-9ff0-cde1bf5a083d.jpg',
+  },
+  'dominykasr.': {
+    name: 'Dominykas Rakūnas',
+    avatar: '4d6d494b-716a-4d87-9804-516c84223688.png',
+  },
+  'deimantės.': {
+    name: 'Deimantė Simonaitytė',
+    avatar: 'df8e1dec-c2fc-4f89-91da-0d2af348899f.png',
+  },
+  'pauliusp.': {
+    name: 'Paulius Preikša',
+    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+  },
+  'lukasa.': {
+    name: 'Lukas Alavičius',
+    avatar: '1ae674ee-8826-42df-a308-6849a559e03a.jpg',
+  },
+  'justasb.': {
+    name: 'Justas Baniulis',
+    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+  },
+  'mantvydasr.': {
+    name: 'Mantvydas Razulevičius',
+    avatar: '05a25592-50c4-4ef8-9cbf-012962fdc651.jpg',
+  },
+  'tadast.': {
+    name: 'Tadas Turskis',
+    avatar: 'f7cb4ebe-9acd-477f-80e7-518cbc87e4a5.jpeg',
+  },
+  'žydrūnasg.': {
+    name: 'Žydrūnas Grabauskas',
+    avatar: 'b832b7e5-3d43-469e-a8f5-6fffa4388c6c.jpg',
+  },
+  'airidasž.': {
+    name: 'Airidas Žaliauskas',
+    avatar: '346934e1-35ec-4f66-b354-aa11d7b223f0.jpg',
   },
 };
 
