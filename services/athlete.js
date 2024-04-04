@@ -179,6 +179,10 @@ export const athleteMap = {
     name: 'Airidas Žaliauskas',
     avatar: '346934e1-35ec-4f66-b354-aa11d7b223f0.jpg',
   },
+  'dovilėb.': {
+    name: 'Dovilė Bulvičienė',
+    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+  },
 };
 
 export function getAthleteName(name) {
