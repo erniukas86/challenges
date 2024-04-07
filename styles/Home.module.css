@@ -1,9 +1,8 @@
 .container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: #eed59a;
 }
@@ -191,6 +190,10 @@
   top: 0px;
   right: 0px;
   padding: 20px;
+}
+
+.leaderboardContainer{
+  display: flex;
 }
 
 @media screen and (max-width: 700px) {
