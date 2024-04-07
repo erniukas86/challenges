@@ -172,6 +172,8 @@ function applyModifier(result) {
     'žydrūnasg.': 0,
     'airidasž.': 0,
     'dovilėb.': 0,
+    'rokasj.': 0,
+    'tomasr.': 0,
   };
 
   const keys = Object.keys(modifiers);

@@ -183,6 +183,14 @@ export const athleteMap = {
     name: 'Dovilė Bulvičienė',
     avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
   },
+  'rokasj.': {
+    name: 'Rokas Jankauskas',
+    avatar: '98d96677-847c-4dc9-aa70-fd26a0248ad4.jpg',
+  },
+  'tomasr.': {
+    name: 'Tomas Rentelis',
+    avatar: '7f5c5641-5603-4dde-ac77-8752e57d7936.jpg',
+  },
 };
 
 export function getAthleteName(name) {
