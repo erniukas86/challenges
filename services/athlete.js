@@ -17,7 +17,7 @@ export const athleteMap = {
   },
   'edgarasa.': {
     name: 'Edgaras Abromaitis',
-    avatar: 'a194a2ea-bb64-4903-8eea-c32f69190703.jpg',
+    avatar: '644ea896-79b3-4e92-8e71-750f7ad1d199.jpg',
   },
   'edvinasv.': {
     name: 'Edvinas Velička',
@@ -25,7 +25,7 @@ export const athleteMap = {
   },
   'martynasj.': {
     name: 'Martynas Juzaitis',
-    avatar: '8bc01fc1-5fe4-4741-b8c5-b0545593e052.jpg',
+    avatar: '8b6c495e-2ed2-4490-ad60-10ad6b3df718.jpg',
   },
   'mindaugass.': {
     name: 'Mindaugas Stanionis',
@@ -37,15 +37,15 @@ export const athleteMap = {
   },
   'klaidasp.': {
     name: 'Klaidas Pilkis',
-    avatar: '980385af-64fa-4868-bfb8-bef3c74d1720.png',
+    avatar: 'e909b17c-262d-445d-8cc7-84cbac769a84.jpg',
   },
   'sandraž.': {
     name: 'Sandra Žemaitaitytė',
-    avatar: 'f2914e1c-e7fe-494b-9cb6-6d3803bb8c67.jpg',
+    avatar: '6731ff6a-d513-4847-82fc-56b782808b9b.jpg',
   },
   'raimondap.': {
     name: 'Raimonda Preimonaitė',
-    avatar: '1fc73cf3-60f5-4637-b0bd-5ea3298ee43b.jpg',
+    avatar: 'b4876d89-8dc5-439b-b41e-41952a97d617.jpg',
   },
   'danilk.': {
     name: 'Danil Kurevin',
@@ -69,11 +69,11 @@ export const athleteMap = {
   },
   'vaidas.': {
     name: 'Vaida Stanionytė',
-    avatar: 'd0aba2fe-e55d-4171-bde0-a2f79a9b44aa.jpg',
+    avatar: '4630d436-bb54-4373-afad-c3bd42ae5ef0.jpg',
   },
   'rokass.': {
     name: 'Rokas Sičiovas',
-    avatar: '22a9066d-28cc-4969-b6cc-a3fd110b9e32.jpg',
+    avatar: '25a443fa-63e4-47b4-b059-5e0b884a7e48.jpg',
   },
   'egidijusr.': {
     name: 'Egidijus Rubys',
@@ -85,11 +85,11 @@ export const athleteMap = {
   },
   'justinasl.': {
     name: 'Justinas Lažauninkas',
-    avatar: 'eb874ec3-3d20-4cdf-a76b-a90954b3bd6c.jpg',
+    avatar: 'c6bb8d20-7269-4a3d-ad74-49d04665d082.jpg',
   },
   'aurimass.': {
     name: 'Aurimas Stanaitis',
-    avatar: '33a62878-3622-4d75-9b36-db0c6c3bfb1b.jpg',
+    avatar: '264d75ea-79c1-4356-ac78-257f726952fa.jpg',
   },
   'karolisv.': {
     name: 'Karolis Vaitelė',

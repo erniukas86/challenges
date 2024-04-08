@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import ReactModal from 'react-modal';
 import Countdown, { zeroPad } from 'react-countdown';
 import styles from '../styles/Home.module.css';
-import { getAthleteName, getAthleteAvatar, athleteMap } from '../services/athlete';
-import ProgressBar from '../components/progressBar';
+import { getAthleteName, athleteMap } from '../services/athlete';
 import { get } from './api/challenge';
 import CheckpointsBar from '../components/progressBar/checkpoints';
+import Leaderboard from '../components/leaderboard';
 
 const customStyles = {
   content: {
@@ -95,24 +95,6 @@ function Home({ challenge }) {
     closeGoalDialog();
   };
 
-  const calculateAthletePercent = (item) => {
-    const result = (item.total / 10) / goal;
-    return result.toFixed(2);
-  };
-
-  const calculateKmPerDay = (item) => {
-    let result = parseInt(goal, 10) - item.total / 1000;
-
-    const endDate = new Date(2024, 6, 1);
-    const now = new Date();
-    const diffTime = Math.abs(endDate - now);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-    result /= diffDays;
-
-    return result.toFixed(2);
-  };
-
   const getCountDownDate = () => {
     const finishDate = new Date(2024, 6, 1);
     const today = new Date();
@@ -146,64 +128,12 @@ function Home({ challenge }) {
         {challenge.name}
         <button onClick={openGoalDialog} className={styles.goalButton} type="button">SET YOUR GOAL!</button>
       </h2>
-      {/* <span className={styles.countDown}>55 days 2:45:22</span> */}
       <Countdown renderer={renderer} date={getCountDownDate()}>
         <span>Finished!</span>
       </Countdown>
       <h4>{challenge.description}</h4>
       <CheckpointsBar text={teamProgressText} percent={teamProgressInPercent} total={teamTotalKm} />
-      <table className={styles.table}>
-        <thead>
-          <th>Rank</th>
-          <th>Athlete</th>
-          <th>Distance</th>
-        </thead>
-        {activities.map((item, index) => (
-          <tr key={item.name}>
-            <td>
-              {index === 0 && '🥇'}
-              {index === 1 && '🥈'}
-              {index === 2 && '🥉'}
-              {index > 2 && <span className={styles.regularPlace}>{index + 1}</span>}
-            </td>
-            <td>
-              <div className={styles.athlete}>
-                <img
-                  alt="runner"
-                  className={styles.avatar}
-                  src={getAthleteAvatar(item.name)}
-                />
-                {getAthleteName(item.name)}
-              </div>
-              {item.name === athlete && goal && (
-              <ProgressBar
-                text={`${calculateAthletePercent(item)} %`}
-                percent={calculateAthletePercent(item)}
-                unsetWidth
-              />
-              )}
-
-            </td>
-            <td>
-              {(item.total / 1000).toFixed(2)}
-              {' '}
-              km
-              {item.name === athlete && goal && (
-              <div
-                className={styles.kmPerdayText}
-              >
-                Run
-                <span>
-                  {' '}
-                  {calculateKmPerDay(item)}
-                </span>
-                km each day to reach a goal!
-              </div>
-              ) }
-            </td>
-          </tr>
-        ))}
-      </table>
+      <Leaderboard challenge={challenge} goal={goal} athlete={athlete} />
       <ReactModal
         isOpen={isGoalDialogVisible}
         contentLabel="Minimal Modal Example"
