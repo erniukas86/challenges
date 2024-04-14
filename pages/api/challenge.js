@@ -6,6 +6,7 @@ const axios = require('axios');
 const fs = require('fs').promises;
 const path = require('path');
 const { tmpdir } = require('os');
+const athletes = require('../../data/athletes.json');
 
 async function getAccessToken() {
   const response = await axios.post(stravaEndpoints.GET_ACCESS_TOKEN, {
@@ -125,71 +126,26 @@ function calculateTotals(challenge) {
 }
 
 function applyModifier(result) {
-  const modifiers = {
-    'dariuso.': 0,
-    'simasv.': 0,
-    'petern.': 0,
-    'erniukasb.': 0,
-    'edgarasa.': 0,
-    'martynasj.': 0,
-    'klaidasp.': 0,
-    'sandraž.': 0,
-    'andrejusi.': 0,
-    'edvinasv.': 0,
-    'raimondap.': 0,
-    'danilk.': 0,
-    'mantasr.': 0,
-    'oļegsč.': 0,
-    'tadask.': 0,
-    'robertask.': 0,
-    'vaidas.': 0,
-    'rokass.': 0,
-    'egidijusr.': 0,
-    'tomasb.': 0,
-    'mindaugass.': 0,
-    'justinasl.': 0,
-    'aurimass.': 0,
-    'karolisv.': 0,
-    'elektrinisp.': 0,
-    'liudvikasg.': 0,
-    'aleksandrasn.': 0,
-    'rytisj.': 0,
-    'cristinam.': 0,
-    'tamásk.': 0,
-    'ferl.': 0,
-    'johanh.': 0,
-    'gintarėž.': 0,
-    'deividask.': 0,
-    'matast.': 0,
-    'laimonasm.': 0,
-    'dominykasr.': 0,
-    'deimantės.': 0,
-    'pauliusp.': 0,
-    'lukasa.': 0,
-    'justasb.': 0,
-    'mantvydasr.': 0,
-    'tadast.': 0,
-    'žydrūnasg.': 0,
-    'airidasž.': 0,
-    'dovilėb.': 0,
-    'rokasj.': 0,
-    'tomasr.': 0,
-  };
-
-  const keys = Object.keys(modifiers);
+  const keys = Object.keys(athletes);
 
   const items = [];
 
   for (let index = 0; index < keys.length; index++) {
     const key = keys[index];
     const res = result.items.find((x) => x.name.toLowerCase() === key);
-    let total = modifiers[key];
+    const athlete = athletes[key];
+    let total = athlete.modifier;
 
     if (res) {
       total += res.total;
     }
 
-    items.push({ name: key, total });
+    items.push({
+      name: key,
+      total,
+      runningRecordKm: athlete?.runningRecordKm || null,
+      runningRecordYear: athlete?.runningRecordYear || null,
+    });
   }
 
   result.items = items;
