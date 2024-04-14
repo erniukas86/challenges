@@ -65,7 +65,7 @@ export default function CheckpointsBar({ percent, unsetWidth, total }) {
   return (
     <>
       <h4>
-        {`${total.toFixed(2)} KM already done.`}
+        {`${total.toFixed(2)} KM done.`}
         {!isRecordBeat && (
         <>
           {` ${getKmUntilNextChekcpoint().toFixed(2)} `}
