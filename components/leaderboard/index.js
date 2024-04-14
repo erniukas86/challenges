@@ -4,8 +4,10 @@ import styles from '../../styles/Home.module.css';
 import { athleteMap } from '../../services/athlete';
 import Table from './table';
 
-function Leaderboard({ challenge, goal, athlete }) {
-  let activities = challenge.items.filter((x) => athleteMap[x.name.toLowerCase()]);
+function Leaderboard({
+  athletes, goal, athlete, onlyTop1,
+}) {
+  let activities = athletes.filter((x) => athleteMap[x.name.toLowerCase()]);
 
   activities = activities.filter((x) => x.total > 0);
 
@@ -18,7 +20,12 @@ function Leaderboard({ challenge, goal, athlete }) {
       <div className={styles.leaderboardContainer}>
         {isBigScreen && (
         <>
-          <Table activities={activities.splice(0, firstTableCount)} goal={goal} athlete={athlete} />
+          <Table
+            activities={activities.splice(0, firstTableCount)}
+            goal={goal}
+            athlete={athlete}
+            onlyTop1={onlyTop1}
+          />
           <Table
             activities={activities}
             goal={goal}
@@ -27,7 +34,14 @@ function Leaderboard({ challenge, goal, athlete }) {
           />
         </>
         )}
-        {!isBigScreen && <Table activities={activities} goal={goal} athlete={athlete} />}
+        {!isBigScreen && (
+        <Table
+          activities={activities}
+          goal={goal}
+          athlete={athlete}
+          onlyTop1={onlyTop1}
+        />
+        )}
       </div>
     </div>
   );
