@@ -181,7 +181,7 @@ export const athleteMap = {
   },
   'dovilėb.': {
     name: 'Dovilė Bulvičienė',
-    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+    avatar: '0617784d-4282-4dc5-861f-484be46e46db.jpg',
   },
   'rokasj.': {
     name: 'Rokas Jankauskas',
