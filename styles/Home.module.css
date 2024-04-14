@@ -67,6 +67,11 @@
   align-items: center;
 }
 
+.athletePBText{
+  font-size: small;
+  opacity: 0.5;
+}
+
 .regularPlace{
   margin-left: 10px;
 }
@@ -194,6 +199,18 @@
 
 .leaderboardContainer{
   display: flex;
+}
+
+.badge {
+  font-size: x-small;
+  background-color: #eed59a;
+  color: #363636;
+  padding: 2px;
+  margin-left: 4px;
+  border-radius: 7px;
+  font-weight: 700;
+  position: relative;
+  top: -11px;
 }
 
 @media screen and (max-width: 700px) {

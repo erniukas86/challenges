@@ -12,7 +12,6 @@ function Leaderboard({ challenge, goal, athlete }) {
   const firstTableCount = Math.round(activities.length / 2);
 
   const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' });
-  console.log('isBigScreen', isBigScreen);
 
   return (
     <div className={styles.container}>

@@ -30,6 +30,35 @@ function Table({
     return index;
   };
 
+  const getAthleteRunningPB = (athleteChallenge) => {
+    if (athleteChallenge.runningRecordKm && athleteChallenge.runningRecordYear) {
+      return `PB: ${athleteChallenge.runningRecordKm} KM (${athleteChallenge.runningRecordYear})`;
+    }
+
+    return null;
+  };
+
+  const isNewbieAtRunning = (athleteChallenge) => {
+    if (!athleteChallenge.runningRecordKm || !athleteChallenge.runningRecordYear) {
+      return (
+        <span className={styles.badge}>NEW</span>
+      );
+    }
+
+    return null;
+  };
+
+  const isRunningPB = (athleteChallenge) => {
+    if (athleteChallenge.runningRecordKm
+      && (athleteChallenge.total / 1000).toFixed(2) > athleteChallenge.runningRecordKm) {
+      return (
+        <span className={styles.badge}>PB!</span>
+      );
+    }
+
+    return null;
+  };
+
   return (
     <div className={styles.container}>
       <table className={styles.table}>
@@ -57,7 +86,12 @@ function Table({
                   className={styles.avatar}
                   src={getAthleteAvatar(item.name)}
                 />
-                {getAthleteName(item.name)}
+                <div>
+                  {getAthleteName(item.name)}
+                  {isNewbieAtRunning(item)}
+                  {isRunningPB(item)}
+                  <div className={styles.athletePBText}>{getAthleteRunningPB(item)}</div>
+                </div>
               </div>
               {item.name === athlete && goal && (
               <ProgressBar
@@ -66,7 +100,6 @@ function Table({
                 unsetWidth
               />
               )}
-
             </td>
             <td>
               {(item.total / 1000).toFixed(2)}
