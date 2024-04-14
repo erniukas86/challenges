@@ -201,6 +201,15 @@ export function getAthleteName(name) {
   return name;
 }
 
+export function getAthleteFirstName(name) {
+  if (athleteMap[name.toLowerCase()]) {
+    const splitted = athleteMap[name.toLowerCase()].name.split(' ');
+    return splitted[0];
+  }
+
+  return name;
+}
+
 const baseAvatarUrl = 'https://cm-b09eaa56-75eb-42f6-9d77-145ac6f6dedb.s3.eu-central-1.amazonaws.com/system/db/images/employees_photos/';
 
 export function getAthleteAvatar(name) {

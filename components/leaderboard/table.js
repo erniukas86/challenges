@@ -1,10 +1,13 @@
+import { useMediaQuery } from 'react-responsive';
 import styles from '../../styles/Home.module.css';
-import { getAthleteName, getAthleteAvatar } from '../../services/athlete';
+import { getAthleteName, getAthleteAvatar, getAthleteFirstName } from '../../services/athlete';
 import ProgressBar from '../progressBar';
 
 function Table({
   activities, goal, athlete, startIndex,
 }) {
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' });
+
   const calculateAthletePercent = (item) => {
     const result = (item.total / 10) / goal;
     return result.toFixed(2);
@@ -65,7 +68,7 @@ function Table({
         <thead>
           <th>Rank</th>
           <th>Athlete</th>
-          <th>Distance</th>
+          <th>Distance (KM)</th>
         </thead>
         {activities.map((item, index) => (
           <tr key={item.name}>
@@ -87,7 +90,7 @@ function Table({
                   src={getAthleteAvatar(item.name)}
                 />
                 <div>
-                  {getAthleteName(item.name)}
+                  {isTabletOrMobile ? getAthleteFirstName(item.name) : getAthleteName(item.name)}
                   {isNewbieAtRunning(item)}
                   {isRunningPB(item)}
                   <div className={styles.athletePBText}>{getAthleteRunningPB(item)}</div>
@@ -103,8 +106,6 @@ function Table({
             </td>
             <td>
               {(item.total / 1000).toFixed(2)}
-              {' '}
-              km
               {item.name === athlete && goal && (
               <div
                 className={styles.kmPerdayText}

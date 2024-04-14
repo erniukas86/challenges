@@ -239,6 +239,13 @@
   .teamRecordContainer{
     width: 400px;
   }
+  .container {
+    padding: 2px;
+  }
+
+  .container h2, .container h4 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -258,5 +265,9 @@
   .countDown {
     position: unset;
     padding: 2px;
+  }
+
+  .countDown br {
+    display: none;
   }
 }
