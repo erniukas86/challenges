@@ -1,7 +1,7 @@
 export const athleteMap = {
   'dariuso.': {
     name: 'Darius Orvidas',
-    avatar: '4ce9e897-9d5a-4e33-b0f3-832143552b02.jpg',
+    avatar: '22a3caca-7dcb-49b6-a4f1-ab0e3b0b517a.jpg',
   },
   'simasv.': {
     name: 'Simas Veleckas',
@@ -53,7 +53,7 @@ export const athleteMap = {
   },
   'mantasr.': {
     name: 'Mantas Reika',
-    avatar: 'cd95a6dd-ec40-414f-b32b-69868e22bffa.JPG',
+    avatar: '7ccd4c5f-7710-44a7-9c0c-b5003979ce7d.jpg',
   },
   'oļegsč.': {
     name: 'Oļegs Čapligins',
@@ -81,7 +81,7 @@ export const athleteMap = {
   },
   'tomasb.': {
     name: 'Tomas Banys',
-    avatar: 'd66e2646-24b2-478f-8f85-e0be08be818f.JPG',
+    avatar: '144f95f6-7e34-48f6-877c-5c43669cda0c.jpg',
   },
   'justinasl.': {
     name: 'Justinas Lažauninkas',
