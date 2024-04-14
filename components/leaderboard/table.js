@@ -4,7 +4,7 @@ import { getAthleteName, getAthleteAvatar, getAthleteFirstName } from '../../ser
 import ProgressBar from '../progressBar';
 
 function Table({
-  activities, goal, athlete, startIndex,
+  activities, goal, athlete, startIndex, onlyTop1,
 }) {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' });
 
@@ -74,8 +74,13 @@ function Table({
           <tr key={item.name}>
             <td>
               {getIndex(index) === 0 && '🥇'}
-              {getIndex(index) === 1 && '🥈'}
-              {getIndex(index) === 2 && '🥉'}
+              {getIndex(index) === 1 && !onlyTop1 && '🥈'}
+              {getIndex(index) === 2 && !onlyTop1 && '🥉'}
+              {getIndex(index) < 3 && getIndex(index) > 0 && onlyTop1 && (
+              <span className={styles.regularPlace}>
+                {getIndex(index) + 1}
+              </span>
+              )}
               {getIndex(index) > 2 && (
               <span className={styles.regularPlace}>
                 {getIndex(index) + 1}

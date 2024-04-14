@@ -133,7 +133,7 @@ function Home({ challenge }) {
       </Countdown>
       <h4>{challenge.description}</h4>
       <CheckpointsBar text={teamProgressText} percent={teamProgressInPercent} total={teamTotalKm} />
-      <Leaderboard challenge={challenge} goal={goal} athlete={athlete} />
+      <Leaderboard athletes={challenge.items} goal={goal} athlete={athlete} />
       <ReactModal
         isOpen={isGoalDialogVisible}
         contentLabel="Minimal Modal Example"
