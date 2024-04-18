@@ -191,6 +191,10 @@ export const athleteMap = {
     name: 'Tomas Rentelis',
     avatar: '7f5c5641-5603-4dde-ac77-8752e57d7936.jpg',
   },
+  'linav.': {
+    name: 'Lina Venskutė',
+    avatar: 'e2a7946e-58d7-4588-b676-60e3afea3cff.jpg',
+  },
 };
 
 export function getAthleteName(name) {
