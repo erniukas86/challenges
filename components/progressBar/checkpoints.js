@@ -64,7 +64,7 @@ export default function CheckpointsBar({ percent, unsetWidth, total }) {
 
   return (
     <>
-      <h4>
+      <h4 className={styles.checkpointsText}>
         {`${total.toFixed(2)} KM done.`}
         {!isRecordBeat && (
         <>

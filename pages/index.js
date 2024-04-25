@@ -127,11 +127,12 @@ function Home({ challenge }) {
       <h2>
         {challenge.name}
         <button onClick={openGoalDialog} className={styles.goalButton} type="button">SET YOUR GOAL!</button>
+        <span className={styles.challengeDescription}>{challenge.description}</span>
       </h2>
       <Countdown renderer={renderer} date={getCountDownDate()}>
         <span>Finished!</span>
       </Countdown>
-      <h4>{challenge.description}</h4>
+      {/* <h4>{challenge.description}</h4> */}
       <CheckpointsBar text={teamProgressText} percent={teamProgressInPercent} total={teamTotalKm} />
       <Leaderboard athletes={challenge.items} goal={goal} athlete={athlete} />
       <ReactModal

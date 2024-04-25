@@ -6,7 +6,7 @@
         "modifier": 0,
         "runningRecordKm": 1016.26,
         "runningRecordYear": 2022,
-        "isTop3Ever": true
+        "isRunningTop3Ever": true
     },
     "aleksandrasn.": {
         "modifier": 0
@@ -25,7 +25,7 @@
         "modifier": 9020,
         "runningRecordKm": 500.05,
         "runningRecordYear": 2022,
-        "isTop3Ever": true
+        "isRunningTop3Ever": true
     },
     "deimantės.": {
         "modifier": 0
@@ -47,7 +47,7 @@
         "modifier": 145430,
         "runningRecordKm": 1249.96,
         "runningRecordYear": 2019,
-        "isTop3Ever": true
+        "isRunningTop3Ever": true
     },
     "egidijusr.": {
         "modifier": 0,
@@ -61,7 +61,7 @@
         "modifier": 246230,
         "runningRecordKm": 1126.65,
         "runningRecordYear": 2021,
-        "isTop3Ever": true
+        "isRunningTop3Ever": true
     },
     "ferl.": {
         "modifier": 2550,
@@ -95,7 +95,7 @@
         "modifier": 0,
         "runningRecordKm": 159.57,
         "runningRecordYear": 2017,
-        "isTop3Ever": true
+        "isRunningTop3Ever": true
     },
     "lukasa.": {
         "modifier": 0
@@ -119,7 +119,7 @@
         "modifier": 50080,
         "runningRecordKm": 1002.36,
         "runningRecordYear": 2020,
-        "isTop3Ever": true
+        "isRunningTop3Ever": true
     },
     "oļegsč.": {
         "modifier": 0
@@ -128,7 +128,7 @@
         "modifier": 54047,
         "runningRecordKm": 271.38,
         "runningRecordYear": 2017,
-        "isTop3Ever": true
+        "isRunningTop3Ever": true
     },
     "raimondap.": {
         "modifier": 9030,
@@ -191,7 +191,7 @@
         "modifier": 60840,
         "runningRecordKm": 500.12,
         "runningRecordYear": 2023,
-        "isTop3Ever": true
+        "isRunningTop3Ever": true
     },
     "žydrūnasg.": {
         "modifier": 39130
