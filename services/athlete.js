@@ -195,6 +195,10 @@ export const athleteMap = {
     name: 'Lina Venskutė',
     avatar: 'e2a7946e-58d7-4588-b676-60e3afea3cff.jpg',
   },
+  'rokassidaravicius.': {
+    name: 'Rokas Sidaravičius',
+    avatar: '27126aa4-35fa-4359-a3a3-1d434bffdf99.png',
+  },
 };
 
 export function getAthleteName(name) {
