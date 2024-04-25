@@ -48,12 +48,15 @@
 .avatar {
 	line-height: 0;
 	display: inline-block;
-	margin: 5px;
+	margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
   border: 2px solid #eed59a;
 	border-radius: 50%;
 	transition: linear 0.25s;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
 }
 
 .avatar:hover {
@@ -107,6 +110,11 @@
   background: #363636;
   color: #eed59a;
   transition: clip-path 1s linear;
+}
+
+.checkpointsContainer{
+  height: 50px;
+  position: relative;
 }
 
 .checkpoint{
@@ -222,10 +230,6 @@
     width: 500px;
   }
 
-  .checkpointContainer{
-
-  }
-
   .teamRecordBackText{
     font-size: small;
   }
@@ -269,5 +273,11 @@
 
   .countDown br {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .checkpointsContainer{
+    margin-bottom: -20px;
   }
 }

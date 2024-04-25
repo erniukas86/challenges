@@ -79,7 +79,7 @@ export default function CheckpointsBar({ percent, unsetWidth, total }) {
 
       </h4>
 
-      <div style={{ height: '50px', position: 'relative' }}>
+      <div className={styles.checkpointsContainer}>
 
         <div className={`${styles.teamRecordContainer} ${styles.checkpointContainer}`} style={containerStyle}>
           <div className={styles.teamRecordBackText} />
