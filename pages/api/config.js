@@ -4,7 +4,7 @@ export const config = {
   refreshToken: '0c3867795fc7196384bd4f85c472860fff40b985',
   stravaApiUrl: 'https://www.strava.com/api/v3',
   challengeName: 'PC RUNNING CHALLENGE 2024',
-  challengeStartId: '2673.11372138619',
+  challengeStartId: '6113.1212021202.6',
   challengeTeamRecord: 5764.21,
   challengeDescription: 'Rewards: >150Km: individual medals. Top 3: Special prizes and infinite glory.',
   kmToGermany: 1279,
