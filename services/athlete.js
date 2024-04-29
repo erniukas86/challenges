@@ -29,7 +29,7 @@ export const athleteMap = {
   },
   'mindaugass.': {
     name: 'Mindaugas Stanionis',
-    avatar: '90ef9116-0eb6-4e12-ba43-b06a55becd41.jpg',
+    avatar: '22cf8455-ecf3-4ce4-8202-07768c407662.jpg',
   },
   'andrejusi.': {
     name: 'Andrejus Ivaščenko',
@@ -198,6 +198,10 @@ export const athleteMap = {
   'rokassidaravicius.': {
     name: 'Rokas Sidaravičius',
     avatar: '27126aa4-35fa-4359-a3a3-1d434bffdf99.png',
+  },
+  'justasp.': {
+    name: 'Justas Pranauskis',
+    avatar: '3df955de-4c97-437a-9838-b5b6244775f7.jpg',
   },
 };
 
