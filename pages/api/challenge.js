@@ -104,7 +104,7 @@ function calculateTotals(challenge) {
 
     let athleteName = `${workout.athlete.firstname}${workout.athlete.lastname}`;
 
-    if (athleteName.toLocaleLowerCase() === 'rokass.' && workout.name.toLocaleLowerCase().indexOf('pc running') > -1) {
+    if (athleteName.toLocaleLowerCase() === 'rokass.' && workout.name.toLocaleLowerCase().indexOf('pc running') === -1) {
       athleteName = 'rokassidaravicius.';
     }
 
