@@ -83,7 +83,7 @@ export const athleteMap = {
     name: 'Tomas Banys',
     avatar: '144f95f6-7e34-48f6-877c-5c43669cda0c.jpg',
   },
-  'justinasl.': {
+  'justinaslaaaaa.': {
     name: 'Justinas Lažauninkas',
     avatar: 'c6bb8d20-7269-4a3d-ad74-49d04665d082.jpg',
   },
