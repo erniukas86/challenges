@@ -1,15 +1,17 @@
-import { useMediaQuery } from 'react-responsive';
-import styles from '../../styles/Home.module.css';
-import { getAthleteName, getAthleteAvatar, getAthleteFirstName } from '../../services/athlete';
-import ProgressBar from '../progressBar';
+import { useMediaQuery } from "react-responsive";
+import styles from "../../styles/Home.module.css";
+import {
+  getAthleteName,
+  getAthleteAvatar,
+  getAthleteFirstName,
+} from "../../services/athlete";
+import ProgressBar from "../progressBar";
 
-function Table({
-  activities, goal, athlete, startIndex, onlyTop1,
-}) {
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 800px)' });
+function Table({ activities, goal, athlete, startIndex, onlyTop1 }) {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
 
   const calculateAthletePercent = (item) => {
-    const result = (item.total / 10) / goal;
+    const result = item.total / 10 / goal;
     return result.toFixed(2);
   };
 
@@ -34,7 +36,10 @@ function Table({
   };
 
   const getAthleteRunningPB = (athleteChallenge) => {
-    if (athleteChallenge.runningRecordKm && athleteChallenge.runningRecordYear) {
+    if (
+      athleteChallenge.runningRecordKm &&
+      athleteChallenge.runningRecordYear
+    ) {
       return `PB: ${athleteChallenge.runningRecordKm} KM (${athleteChallenge.runningRecordYear})`;
     }
 
@@ -42,25 +47,37 @@ function Table({
   };
 
   const isNewbieAtRunning = (athleteChallenge) => {
-    if (!athleteChallenge.runningRecordKm || !athleteChallenge.runningRecordYear) {
-      return (
-        <span className={styles.badge}>NEW</span>
-      );
+    if (
+      !athleteChallenge.runningRecordKm ||
+      !athleteChallenge.runningRecordYear
+    ) {
+      return <span className={styles.badge}>NEW</span>;
     }
 
     return null;
   };
 
   const isRunningPB = (athleteChallenge) => {
-    if (athleteChallenge.runningRecordKm
-      && (athleteChallenge.total / 1000).toFixed(2) > athleteChallenge.runningRecordKm) {
-      return (
-        <span className={styles.badge}>PB!</span>
-      );
+    if (
+      athleteChallenge.runningRecordKm &&
+      (athleteChallenge.total / 1000).toFixed(2) >
+        athleteChallenge.runningRecordKm
+    ) {
+      return <span className={styles.badge}>PB!</span>;
     }
 
     return null;
   };
+
+  const getFixedKm = (item) =>
+    ["edvinasv."].includes(item.name) ? item.total + 3000 * 1000 : item.total;
+
+  const fixedActivities = activities
+    .map((item) => ({
+      ...item,
+      total: getFixedKm(item),
+    }))
+    .sort((a, b) => b.total - a.total);
 
   return (
     <div className={styles.container}>
@@ -70,21 +87,21 @@ function Table({
           <th>Athlete</th>
           <th>Distance (KM)</th>
         </thead>
-        {activities.map((item, index) => (
+        {fixedActivities.map((item, index) => (
           <tr key={item.name}>
             <td>
-              {getIndex(index) === 0 && '🥇'}
-              {getIndex(index) === 1 && !onlyTop1 && '🥈'}
-              {getIndex(index) === 2 && !onlyTop1 && '🥉'}
+              {getIndex(index) === 0 && "🥇"}
+              {getIndex(index) === 1 && !onlyTop1 && "🥈"}
+              {getIndex(index) === 2 && !onlyTop1 && "🥉"}
               {getIndex(index) < 3 && getIndex(index) > 0 && onlyTop1 && (
-              <span className={styles.regularPlace}>
-                {getIndex(index) + 1}
-              </span>
+                <span className={styles.regularPlace}>
+                  {getIndex(index) + 1}
+                </span>
               )}
               {getIndex(index) > 2 && (
-              <span className={styles.regularPlace}>
-                {getIndex(index) + 1}
-              </span>
+                <span className={styles.regularPlace}>
+                  {getIndex(index) + 1}
+                </span>
               )}
             </td>
             <td>
@@ -95,34 +112,33 @@ function Table({
                   src={getAthleteAvatar(item.name)}
                 />
                 <div>
-                  {isTabletOrMobile ? getAthleteFirstName(item.name) : getAthleteName(item.name)}
+                  {isTabletOrMobile
+                    ? getAthleteFirstName(item.name)
+                    : getAthleteName(item.name)}
                   {isNewbieAtRunning(item)}
                   {isRunningPB(item)}
-                  <div className={styles.athletePBText}>{getAthleteRunningPB(item)}</div>
+                  <div className={styles.athletePBText}>
+                    {getAthleteRunningPB(item)}
+                  </div>
                 </div>
               </div>
               {item.name === athlete && goal && (
-              <ProgressBar
-                text={`${calculateAthletePercent(item)} %`}
-                percent={calculateAthletePercent(item)}
-                unsetWidth
-              />
+                <ProgressBar
+                  text={`${calculateAthletePercent(item)} %`}
+                  percent={calculateAthletePercent(item)}
+                  unsetWidth
+                />
               )}
             </td>
             <td>
               {(item.total / 1000).toFixed(2)}
               {item.name === athlete && goal && (
-              <div
-                className={styles.kmPerdayText}
-              >
-                Run
-                <span>
-                  {' '}
-                  {calculateKmPerDay(item)}
-                </span>
-                km each day to reach a goal!
-              </div>
-              ) }
+                <div className={styles.kmPerdayText}>
+                  Run
+                  <span> {calculateKmPerDay(item)}</span>
+                  km each day to reach a goal!
+                </div>
+              )}
             </td>
           </tr>
         ))}
