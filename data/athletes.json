@@ -1,6 +1,6 @@
 {
     "airidasž.": {
-        "modifier": 58310
+        "modifier": 107710
     },
     "andrejusi.": {
         "modifier": 0,
@@ -22,7 +22,7 @@
         "runningRecordYear": 2023
     },
     "dariuso.": {
-        "modifier": 9020,
+        "modifier": 17480,
         "runningRecordKm": 500.05,
         "runningRecordYear": 2022,
         "isRunningTop3Ever": true
@@ -39,12 +39,12 @@
         "runningRecordYear": 2023
     },
     "edvinasv.": {
-        "modifier": 72080,
+        "modifier": 158220,
         "runningRecordKm": 80.05,
         "runningRecordYear": 2020
     },
     "edgarasa.": {
-        "modifier": 145430,
+        "modifier": 314360,
         "runningRecordKm": 1249.96,
         "runningRecordYear": 2019,
         "isRunningTop3Ever": true
@@ -58,7 +58,7 @@
         "modifier": 0
     },
     "erniukasb.": {
-        "modifier": 246230,
+        "modifier": 437430,
         "runningRecordKm": 1126.65,
         "runningRecordYear": 2021,
         "isRunningTop3Ever": true
@@ -69,7 +69,7 @@
         "runningRecordYear": 2023
     },
     "johanh.": {
-        "modifier": 9020,
+        "modifier": 23070,
         "runningRecordKm": 52.59,
         "runningRecordYear": 2023
     },
@@ -87,7 +87,7 @@
         "runningRecordYear": 2022
     },
     "klaidasp.": {
-        "modifier": 10380,
+        "modifier": 56680,
         "runningRecordKm": 410.37,
         "runningRecordYear": 2021
     },
@@ -106,17 +106,17 @@
         "runningRecordYear": 2023
     },
     "matast.": {
-        "modifier": 0,
+        "modifier": 12470,
         "runningRecordKm": 19.1,
         "runningRecordYear": 2023
     },
     "mindaugass.": {
-        "modifier": 0,
+        "modifier": 17900,
         "runningRecordKm": 129.62,
         "runningRecordYear": 2023
     },
     "martynasj.": {
-        "modifier": 50080,
+        "modifier": 192580,
         "runningRecordKm": 1002.36,
         "runningRecordYear": 2020,
         "isRunningTop3Ever": true
@@ -125,13 +125,13 @@
         "modifier": 0
     },
     "petern.": {
-        "modifier": 54047,
+        "modifier": 85460,
         "runningRecordKm": 271.38,
         "runningRecordYear": 2017,
         "isRunningTop3Ever": true
     },
     "raimondap.": {
-        "modifier": 9030,
+        "modifier": 13950,
         "runningRecordKm": 100.02,
         "runningRecordYear": 2023
     },
@@ -139,7 +139,7 @@
         "modifier": 0
     },
     "rokasj.": {
-        "modifier": 9260
+        "modifier": 29830
     },
     "rytisj.": {
         "modifier": 0,
@@ -152,54 +152,54 @@
         "runningRecordYear": 2022
     },
     "rokassidaravicius.": {
-        "modifier": 2697,
+        "modifier": 8670,
         "runningRecordKm": 82.17,
         "runningRecordYear": 2021
     },
     "sandraž.": {
-        "modifier": 10560,
+        "modifier": 22730,
         "runningRecordKm": 13,
         "runningRecordYear": 2021
     },
     "simasv.": {
-        "modifier": 106770,
+        "modifier": 210560,
         "runningRecordKm": 216.17,
         "runningRecordYear": 2022
     },
     "tadask.": {
-        "modifier": 12340,
+        "modifier": 36760,
         "runningRecordKm": 101.3,
         "runningRecordYear": 2023
     },
     "tadast.": {
-        "modifier": 10010
+        "modifier": 15010
     },
     "tamásk.": {
-        "modifier": 7110,
+        "modifier": 37410,
         "runningRecordKm": 100.38,
         "runningRecordYear": 2023
     },
     "tomasb.": {
-        "modifier": 11100,
+        "modifier": 61390,
         "runningRecordKm": 143.43,
         "runningRecordYear": 2022
     },
     "tomasr.": {
-        "modifier": 68020
+        "modifier": 152520
     },
     "vaidas.": {
-        "modifier": 60840,
+        "modifier": 132040,
         "runningRecordKm": 500.12,
         "runningRecordYear": 2023,
         "isRunningTop3Ever": true
     },
     "žydrūnasg.": {
-        "modifier": 39130
+        "modifier": 77540
     },
     "linav.": {
-        "modifier": 11300
+        "modifier": 17300
     },
     "justasp.": {
-        "modifier": 0
+        "modifier": 29100
     }
 }
