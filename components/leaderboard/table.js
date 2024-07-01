@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 import { useMediaQuery } from 'react-responsive';
 import styles from '../../styles/Home.module.css';
 import { getAthleteName, getAthleteAvatar, getAthleteFirstName } from '../../services/athlete';

@@ -4,6 +4,7 @@ import { get } from './api/challenge';
 import Leaderboard from '../components/leaderboard';
 import athletes from '../data/athletes.json';
 
+// eslint-disable-next-line no-unused-vars
 function Challengers({ challenge }) {
   const getCountDownDate = () => {
     const finishDate = new Date(2024, 6, 1);
@@ -51,6 +52,7 @@ function Challengers({ challenge }) {
   );
 }
 
+// eslint-disable-next-line import/prefer-default-export
 export async function getStaticProps() {
   const challenge = await get();
 
