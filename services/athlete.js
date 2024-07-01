@@ -203,6 +203,14 @@ export const athleteMap = {
     name: 'Justas Pranauskis',
     avatar: '3df955de-4c97-437a-9838-b5b6244775f7.jpg',
   },
+  'paulinap.': {
+    name: 'Paulina Požėraitė',
+    avatar: '376a661c-cc0b-4857-a991-5b4c20c3e27a.jpg',
+  },
+  'viliusb.': {
+    name: 'Vilius Sabonis',
+    avatar: '6e15c065-b26e-448c-9f44-b6275b961c2b.jpg',
+  },
 };
 
 export function getAthleteName(name) {

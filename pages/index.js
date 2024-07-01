@@ -96,7 +96,7 @@ function Home({ challenge }) {
   };
 
   const getCountDownDate = () => {
-    const finishDate = new Date(2024, 6, 1);
+    const finishDate = new Date(2024, 8, 1);
     const today = new Date();
     const diff = finishDate.getTime() - today.getTime();
     return Date.now() + diff;

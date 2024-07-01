@@ -34,6 +34,7 @@ function Table({
   };
 
   const getAthleteRunningPB = (athleteChallenge) => {
+    return '';
     if (athleteChallenge.runningRecordKm && athleteChallenge.runningRecordYear) {
       return `PB: ${athleteChallenge.runningRecordKm} KM (${athleteChallenge.runningRecordYear})`;
     }
@@ -42,6 +43,7 @@ function Table({
   };
 
   const isNewbieAtRunning = (athleteChallenge) => {
+    return '';
     if (!athleteChallenge.runningRecordKm || !athleteChallenge.runningRecordYear) {
       return (
         <span className={styles.badge}>NEW</span>
@@ -115,7 +117,7 @@ function Table({
               <div
                 className={styles.kmPerdayText}
               >
-                Run
+                Collect
                 <span>
                   {' '}
                   {calculateKmPerDay(item)}
