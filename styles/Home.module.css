@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #eed59a;
+  color: var(--primary);
 }
 
 .table {
   width: 700px;
-  border: 1px solid #eed59a;
+  border: 1px solid var(--primary);
   border-collapse: collapse;
   box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
 }
@@ -40,28 +40,33 @@
 }
 
 .table tr:hover{
-  background-color:#eed59a;
+  background-color:var(--primary);
   cursor: pointer;
-  color: #363636;
+  color: var(--secondary);
 }
 
 .avatar {
 	line-height: 0;
 	display: inline-block;
-	margin-top: 3px;
-  margin-bottom: 3px;
+	margin-top: 2px;
+  margin-bottom: 2px;
   margin-left: 5px;
   margin-right: 5px;
-  border: 2px solid #eed59a;
+  border: 2px solid var(--primary);
 	border-radius: 50%;
 	transition: linear 0.25s;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
+}
+
+.challengeDescription{
+  font-size: medium;
+  display: block;
 }
 
 .avatar:hover {
 	transition: ease-out 0.2s;
-  border: 2px solid #363636;
+  border: 2px solid var(--secondary);
   -webkit-transition: ease-out 0.2s;
 }
 
@@ -94,8 +99,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #eed59a;
-  color: #363636;
+  background: var(--primary);
+  color: var(--secondary);
 }
 
 .teamRecordFrontText{
@@ -107,8 +112,8 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background: #363636;
-  color: #eed59a;
+  background: var(--secondary);
+  color: var(--primary);
   transition: clip-path 1s linear;
 }
 
@@ -120,9 +125,9 @@
 .checkpoint{
   height: 30px;
   width: 30px;
-  background-color: #363636;
+  background-color: var(--secondary);
   border-radius: 50%;
-  border: 4px solid #eed59a;
+  border: 4px solid var(--primary);
   position: absolute;
   top: -10px;
 }
@@ -141,9 +146,9 @@
 
 .goalButton{
   height: 30px;
-  background-color: #eed59a;
+  background-color: var(--primary);
   border: none;
-  color: #363636;
+  color: var(--secondary);
   font-weight: bolder;
   margin-left: 10px;
   position: relative;
@@ -153,13 +158,13 @@
 }
 
 .goalButton:hover{
-  background-color: #363636;
-  color: #eed59a;
+  background-color: var(--secondary);
+  color: var(--primary);
   cursor: pointer;
 }
 
 .dialogHeader{
-  color: #eed59a
+  color: var(--primary)
 }
 
 .dialogContent{
@@ -175,18 +180,18 @@
 .select {
   height: 30px;
   min-width: 50%;
-  background-color: #363636;
-  border: 1px solid #eed59a;
-  color: #eed59a;
+  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+  color: var(--primary);
 }
 
 .input {
   height: 30px;
     min-width: 50%;
     margin-top: 10px;
-    background-color: #363636;
-    border: 1px solid #eed59a;
-    color: #eed59a;
+    background-color: var(--secondary);
+    border: 1px solid var(--primary);
+    color: var(--primary);
     padding-left: 5px;
 }
 
@@ -211,8 +216,8 @@
 
 .badge {
   font-size: x-small;
-  background-color: #eed59a;
-  color: #363636;
+  background-color: var(--primary);
+  color: var(--secondary);
   padding: 2px;
   margin-left: 4px;
   border-radius: 7px;
@@ -279,5 +284,14 @@
 @media screen and (min-width: 1800px) {
   .checkpointsContainer{
     margin-bottom: -20px;
+  }
+
+  .checkpointsText{
+    margin-bottom: 10px;
+  }
+
+  .challengeDescription{
+    display: unset;
+    margin-left: 20px;
   }
 }

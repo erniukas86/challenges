@@ -16,7 +16,7 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     width: '50%',
-    backgroundColor: '#363636',
+    backgroundColor: 'var(--secondary)',
     border: 'none',
     boxShadow: 'rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px',
   },
@@ -96,7 +96,7 @@ function Home({ challenge }) {
   };
 
   const getCountDownDate = () => {
-    const finishDate = new Date(2024, 6, 1);
+    const finishDate = new Date(2024, 8, 1);
     const today = new Date();
     const diff = finishDate.getTime() - today.getTime();
     return Date.now() + diff;
@@ -127,11 +127,12 @@ function Home({ challenge }) {
       <h2>
         {challenge.name}
         <button onClick={openGoalDialog} className={styles.goalButton} type="button">SET YOUR GOAL!</button>
+        <span className={styles.challengeDescription}>{challenge.description}</span>
       </h2>
       <Countdown renderer={renderer} date={getCountDownDate()}>
         <span>Finished!</span>
       </Countdown>
-      <h4>{challenge.description}</h4>
+      {/* <h4>{challenge.description}</h4> */}
       <CheckpointsBar text={teamProgressText} percent={teamProgressInPercent} total={teamTotalKm} />
       <Leaderboard athletes={challenge.items} goal={goal} athlete={athlete} />
       <ReactModal

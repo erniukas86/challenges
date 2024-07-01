@@ -32,7 +32,8 @@ function Challengers({ challenge }) {
     );
   };
 
-  const athletesActivities = challenge.items.filter((x) => !athletes[x.name].isTop3Ever);
+  const athletesActivities = challenge.items
+    .filter((x, index) => !athletes[x.name].isRunningTop3Ever && index > 2);
 
   return (
     <div className={styles.container}>
@@ -61,4 +62,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Challengers;
+// export default Challengers;
