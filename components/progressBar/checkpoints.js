@@ -88,7 +88,7 @@ export default function CheckpointsBar({ percent, unsetWidth, total }) {
             style={{ clipPath, WebkitClipPath: clipPath }}
           />
         </div>
-        <div className={styles.checkpoint} style={{ backgroundColor: '#eed59a', left: 'calc(0% - 15px)' }}>
+        <div className={styles.checkpoint} style={{ backgroundColor: 'var(--primary)', left: 'calc(0% - 15px)' }}>
           <img alt="start" src="/pc-lt.png" className={styles.checkpointIcon} />
         </div>
         <div className={styles.checkpoint} style={{ left: 'calc(22% - 15px)' }}>

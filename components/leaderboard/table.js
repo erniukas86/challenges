@@ -117,7 +117,6 @@ function Table({
               <div
                 className={styles.kmPerdayText}
               >
-                Collect
                 <span>
                   {' '}
                   {calculateKmPerDay(item)}
