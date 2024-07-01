@@ -62,4 +62,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Challengers;
+// export default Challengers;
