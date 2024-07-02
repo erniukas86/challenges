@@ -145,6 +145,8 @@ function applyModifier(result) {
       total,
       runningRecordKm: athlete?.runningRecordKm || null,
       runningRecordYear: athlete?.runningRecordYear || null,
+      cyclingRecordKm: athlete?.cyclingRecordKm || null,
+      cyclingRecordYear: athlete?.cyclingRecordYear || null,
     });
   }
 

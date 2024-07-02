@@ -34,18 +34,34 @@ function Table({
     return index;
   };
 
-  const getAthleteRunningPB = (athleteChallenge) => {
-    return '';
-    if (athleteChallenge.runningRecordKm && athleteChallenge.runningRecordYear) {
-      return `PB: ${athleteChallenge.runningRecordKm} KM (${athleteChallenge.runningRecordYear})`;
+  // const getAthleteRunningPB = (athleteChallenge) => {
+  //   if (athleteChallenge.runningRecordKm && athleteChallenge.runningRecordYear) {
+  //     return `PB: ${athleteChallenge.runningRecordKm} KM (${athleteChallenge.runningRecordYear})`;
+  //   }
+
+  //   return null;
+  // };
+
+  // const isNewbieAtRunning = (athleteChallenge) => {
+  //   if (!athleteChallenge.runningRecordKm || !athleteChallenge.runningRecordYear) {
+  //     return (
+  //       <span className={styles.badge}>NEW</span>
+  //     );
+  //   }
+
+  //   return null;
+  // };
+
+  const getAthleteCyclingPB = (athleteChallenge) => {
+    if (athleteChallenge.cyclingRecordKm && athleteChallenge.cyclingRecordYear) {
+      return `PB: ${athleteChallenge.cyclingRecordKm} KM (${athleteChallenge.cyclingRecordYear})`;
     }
 
     return null;
   };
 
-  const isNewbieAtRunning = (athleteChallenge) => {
-    return '';
-    if (!athleteChallenge.runningRecordKm || !athleteChallenge.runningRecordYear) {
+  const isNewbieAtCycling = (athleteChallenge) => {
+    if (!athleteChallenge.cyclingRecordKm || !athleteChallenge.cyclingRecordYear) {
       return (
         <span className={styles.badge}>NEW</span>
       );
@@ -54,9 +70,20 @@ function Table({
     return null;
   };
 
-  const isRunningPB = (athleteChallenge) => {
-    if (athleteChallenge.runningRecordKm
-      && (athleteChallenge.total / 1000).toFixed(2) > athleteChallenge.runningRecordKm) {
+  // const isRunningPB = (athleteChallenge) => {
+  //   if (athleteChallenge.runningRecordKm
+  //     && (athleteChallenge.total / 1000).toFixed(2) > athleteChallenge.runningRecordKm) {
+  //     return (
+  //       <span className={styles.badge}>PB!</span>
+  //     );
+  //   }
+
+  //   return null;
+  // };
+
+  const isCyclingPB = (athleteChallenge) => {
+    if (athleteChallenge.cyclingRecordKm
+      && (athleteChallenge.total / 1000).toFixed(2) > athleteChallenge.cyclingRecordKm) {
       return (
         <span className={styles.badge}>PB!</span>
       );
@@ -99,9 +126,9 @@ function Table({
                 />
                 <div>
                   {isTabletOrMobile ? getAthleteFirstName(item.name) : getAthleteName(item.name)}
-                  {isNewbieAtRunning(item)}
-                  {isRunningPB(item)}
-                  <div className={styles.athletePBText}>{getAthleteRunningPB(item)}</div>
+                  {isNewbieAtCycling(item)}
+                  {isCyclingPB(item)}
+                  <div className={styles.athletePBText}>{getAthleteCyclingPB(item)}</div>
                 </div>
               </div>
               {item.name === athlete && goal && (
