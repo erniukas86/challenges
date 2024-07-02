@@ -36,7 +36,8 @@ function Table({
 
   // const getAthleteRunningPB = (athleteChallenge) => {
   //   if (athleteChallenge.runningRecordKm && athleteChallenge.runningRecordYear) {
-  //     return `PB: ${athleteChallenge.runningRecordKm} KM (${athleteChallenge.runningRecordYear})`;
+  //     return `PB: ${athleteChallenge.runningRecordKm} KM
+  // (${athleteChallenge.runningRecordYear})`;
   //   }
 
   //   return null;
