@@ -211,6 +211,14 @@ export const athleteMap = {
     name: 'Vilius Sabonis',
     avatar: '6e15c065-b26e-448c-9f44-b6275b961c2b.jpg',
   },
+  'tomasp.': {
+    name: 'Tomas Plavskis',
+    avatar: '6c028195-02ab-45af-8aeb-dde5927a9d33.jpg',
+  },
+  'mariusk.': {
+    name: 'Marius Kamarauskas',
+    avatar: 'ebc9b00d-5ffc-47d5-a522-71a680d75352.jpg',
+  },
 };
 
 export function getAthleteName(name) {
