@@ -219,6 +219,10 @@ export const athleteMap = {
     name: 'Marius Kamarauskas',
     avatar: 'ebc9b00d-5ffc-47d5-a522-71a680d75352.jpg',
   },
+  'chiarae.': {
+    name: 'Chiara Eufinger',
+    avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
+  },
 };
 
 export function getAthleteName(name) {
