@@ -223,6 +223,10 @@ export const athleteMap = {
     name: 'Chiara Eufinger',
     avatar: 'a582ff7e-05c5-43c2-a9a5-7af8ec552972.png',
   },
+  'mindaugasj.': {
+    name: 'Mindaugas Jackūnas',
+    avatar: 'e8af12fa-79a2-40e8-ba90-b26fe45fc77c.jpg',
+  },
 };
 
 export function getAthleteName(name) {
