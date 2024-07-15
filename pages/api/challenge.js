@@ -26,7 +26,7 @@ async function getClubActivities(token) {
     },
   });
 
-  console.log('getClubActivities', response.data[7]);
+  console.log('getClubActivities', response.data[0]);
 
   return response.data;
 }
