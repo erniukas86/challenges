@@ -1,6 +1,6 @@
 export const config = {
   clientId: 55926,
-  clientSecret: 'fc2ce3c73cd99258657f027a47164f061c5890fe',
+  clientSecret: 'e21c7b63ac4925be1e8e35c3b8fd91aea50c4632',
   refreshToken: '0c3867795fc7196384bd4f85c472860fff40b985',
   stravaApiUrl: 'https://www.strava.com/api/v3',
   challengeName: 'PC CYCLING CHALLENGE 2024',
