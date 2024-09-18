@@ -1,12 +1,12 @@
 /* eslint-disable no-param-reassign */
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { config, stravaEndpoints } from './config';
+// import { config, stravaEndpoints } from './config';
 
 const axios = require('axios');
 // const fs = require('fs').promises;
-const path = require('path');
-const { tmpdir } = require('os');
-const athletes = require('../../data/athletes.json');
+// const path = require('path');
+// const { tmpdir } = require('os');
+// const athletes = require('../../data/athletes.json');
 
 // async function getAccessToken() {
 //   const response = await axios.post(stravaEndpoints.GET_ACCESS_TOKEN, {
@@ -32,7 +32,8 @@ const athletes = require('../../data/athletes.json');
 // }
 
 // function getActivityId(activity) {
-//   return `${activity.distance}${activity.moving_time}${activity.elapsed_time}${activity.total_elevation_gain}`;
+//   return `${activity.distance}${activity.moving_time}
+// ${activity.elapsed_time}${activity.total_elevation_gain}`;
 // }
 
 // function getStartId(savedActivities) {
@@ -104,7 +105,8 @@ const athletes = require('../../data/athletes.json');
 
 //     let athleteName = `${workout.athlete.firstname}${workout.athlete.lastname}`;
 
-//     if (athleteName.toLocaleLowerCase() === 'rokass.' && workout.name.toLocaleLowerCase().indexOf('pc running') === -1) {
+//     if (athleteName.toLocaleLowerCase() === 'rokass.'
+// && workout.name.toLocaleLowerCase().indexOf('pc running') === -1) {
 //       athleteName = 'rokassidaravicius.';
 //     }
 
@@ -166,6 +168,10 @@ const athletes = require('../../data/athletes.json');
 //   result = calculateTotals(result);
 //   return applyModifier(result);
 // }
+
+export async function get() {
+  return [];
+}
 
 export async function getSteps() {
   const headers = {

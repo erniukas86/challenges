@@ -1,7 +1,7 @@
 /* eslint-disable no-unreachable */
 import { useMediaQuery } from 'react-responsive';
 import styles from '../../styles/Home.module.css';
-import { getAthleteName, getAthleteAvatar, getAthleteFirstName } from '../../services/athlete';
+import { getAthleteName, getAthleteFirstName } from '../../services/athlete';
 import ProgressBar from '../progressBar';
 
 function Table({
@@ -61,15 +61,15 @@ function Table({
     return null;
   };
 
-  const isNewbieAtCycling = (athleteChallenge) => {
-    if (!athleteChallenge.cyclingRecordKm || !athleteChallenge.cyclingRecordYear) {
-      return (
-        <span className={styles.badge}>NEW</span>
-      );
-    }
+  // const isNewbieAtCycling = (athleteChallenge) => {
+  //   if (!athleteChallenge.cyclingRecordKm || !athleteChallenge.cyclingRecordYear) {
+  //     return (
+  //       <span className={styles.badge}>NEW</span>
+  //     );
+  //   }
 
-    return null;
-  };
+  //   return null;
+  // };
 
   // const isRunningPB = (athleteChallenge) => {
   //   if (athleteChallenge.runningRecordKm

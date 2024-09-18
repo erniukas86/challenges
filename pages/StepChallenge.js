@@ -44,7 +44,7 @@ function Challengers({ challenge }) {
         <span>Finished!</span>
       </Countdown>
       <h4>
-        Yearly PC 3-Month Steps Challenge – It's time to track our steps,
+        Yearly PC 3-Month Steps Challenge – It is time to track our steps,
         challenge ourselves, and celebrate our progress! 🤩
       </h4>
       <Leaderboard athletes={activities} skipAthletesMapping />
