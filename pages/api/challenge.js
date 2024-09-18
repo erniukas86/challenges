@@ -170,7 +170,7 @@ const axios = require('axios');
 // }
 
 export async function get() {
-  return [];
+  return { items: [] };
 }
 
 export async function getSteps() {
