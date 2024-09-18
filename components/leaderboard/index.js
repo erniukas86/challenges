@@ -5,10 +5,12 @@ import { athleteMap } from '../../services/athlete';
 import Table from './table';
 
 function Leaderboard({
-  athletes, goal, athlete, onlyTop1,
+  athletes, goal, athlete, onlyTop1, skipAthletesMapping,
 }) {
-  let activities = athletes.filter((x) => athleteMap[x.name.toLowerCase()]);
-
+  let activities = athletes;
+  if (!skipAthletesMapping) {
+    activities = athletes.filter((x) => athleteMap[x.name.toLowerCase()]);
+  }
   activities = activities.filter((x) => x.total > 0);
 
   const firstTableCount = Math.round(activities.length / 2);

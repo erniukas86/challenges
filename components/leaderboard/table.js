@@ -99,7 +99,8 @@ function Table({
         <thead>
           <th>Rank</th>
           <th>Athlete</th>
-          <th>Distance (KM)</th>
+          <th>Steps</th>
+          {/* <th>Distance (KM)</th> */}
         </thead>
         {activities.map((item, index) => (
           <tr key={item.name}>
@@ -120,14 +121,25 @@ function Table({
             </td>
             <td>
               <div className={styles.athlete}>
+                {item.image && (
                 <img
                   alt="runner"
                   className={styles.avatar}
-                  src={getAthleteAvatar(item.name)}
+                  // src={getAthleteAvatar(item.name)}
+                  src={`https://media.walk15.lt/resources/${item.image}/100/100`}
                 />
+                )}
+                {!item.image && (
+                <span
+                  alt="runner"
+                  className={styles.avatar}
+                  // src={getAthleteAvatar(item.name)}
+                />
+                )}
+
                 <div>
                   {isTabletOrMobile ? getAthleteFirstName(item.name) : getAthleteName(item.name)}
-                  {isNewbieAtCycling(item)}
+                  {/* {isNewbieAtCycling(item)} */}
                   {isCyclingPB(item)}
                   <div className={styles.athletePBText}>{getAthleteCyclingPB(item)}</div>
                 </div>
@@ -141,7 +153,8 @@ function Table({
               )}
             </td>
             <td>
-              {(item.total / 1000).toFixed(2)}
+              {/* {(item.total / 1000).toFixed(2)} */}
+              {item.total}
               {item.name === athlete && goal && (
               <div
                 className={styles.kmPerdayText}
