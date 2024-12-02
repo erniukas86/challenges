@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable object-curly-newline */
+/* eslint-disable quotes */
 /* eslint-disable no-unreachable */
 import Countdown, { zeroPad } from "react-countdown";
 import styles from "../styles/Home.module.css";
