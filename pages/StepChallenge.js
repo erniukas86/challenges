@@ -1,20 +1,18 @@
 /* eslint-disable no-unreachable */
-import Countdown, { zeroPad } from 'react-countdown';
-import styles from '../styles/Home.module.css';
-import { getSteps } from './api/challenge';
-import Leaderboard from '../components/leaderboard';
+import Countdown, { zeroPad } from "react-countdown";
+import styles from "../styles/Home.module.css";
+import { getSteps } from "./api/challenge";
+import Leaderboard from "../components/leaderboard";
 
 function Challengers({ challenge }) {
   const getCountDownDate = () => {
-    const finishDate = new Date(2024, 11, 2);
+    const finishDate = new Date(2024, 11, 3);
     const today = new Date();
     const diff = finishDate.getTime() - today.getTime();
     return Date.now() + diff;
   };
 
-  const renderer = ({
-    days, hours, minutes, seconds, completed,
-  }) => {
+  const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
       return <span>Finished!</span>;
     }
@@ -23,11 +21,7 @@ function Challengers({ challenge }) {
       <span className={styles.countDown}>
         {`${zeroPad(days)} days`}
         <br />
-        {zeroPad(hours)}
-        :
-        {zeroPad(minutes)}
-        :
-        {zeroPad(seconds)}
+        {zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
       </span>
     );
   };
